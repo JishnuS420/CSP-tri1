@@ -1,7 +1,7 @@
 ---
 toc: true
 layout: post
-description: A minimal example of using markdown with fastpages.
+description: hello made from python
 categories: [markdown]
 title: Python Hello Page
 ---
