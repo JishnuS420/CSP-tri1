@@ -20,4 +20,9 @@ comments: true
 - Hanging Out with Friends
 - Listening to Music 
 
+## My Goals for this Year
+>1. Getting good at CS
+>2. Making Friends
+>3. Get good grades
+
 ## Can't wait to learn with you!
