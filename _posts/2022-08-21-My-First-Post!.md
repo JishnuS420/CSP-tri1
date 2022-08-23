@@ -13,6 +13,8 @@ comments: true
 
 >My name is Jishnu Singiresu, I am a Junior and I can't wait to learn more about CS and its applications!
 
+![]({{ site.baseurl }}/images/Me.jpg)
+
 ## Hobbies
 
 > My Hobbies involve:
