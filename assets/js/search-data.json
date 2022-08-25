@@ -2,6 +2,17 @@
   
     
         "post0": {
+            "title": "Class Notes",
+            "content": "8/23/2022: . Multiples lines of code is called a sequence by college board . cd = change directory mkdir = create new directory rmdir = removes directory . 8/24/2022: . key values .",
+            "url": "https://jishnus420.github.io/CSP-tri1/markdown/2022/08/23/2nd-Post-(Notes).html",
+            "relUrl": "/markdown/2022/08/23/2nd-Post-(Notes).html",
+            "date": " • Aug 23, 2022"
+        }
+        
+    
+  
+    
+        ,"post1": {
             "title": "About Me!",
             "content": "Hi! . My name is Jishnu Singiresu, I am a Junior and I can’t wait to learn more about CS and its applications! . . Hobbies . My Hobbies involve: . Gaming | Hanging Out with Friends | Listening to Music | . My Goals for this Year . Getting good at CS | Making Friends | Get good grades | Can’t wait to learn with you! .",
             "url": "https://jishnus420.github.io/CSP-tri1/markdown/2022/08/21/My-First-Post!.html",
@@ -12,9 +23,9 @@
     
   
     
-        ,"post1": {
+        ,"post2": {
             "title": "Jishnu Singiresu's First Jupyter Notebook with Python Code",
-            "content": "x = &quot;Hello, World!&quot; y = &quot; How is the weather today?&quot; print(x+y) . Hello, World! How is the weather today? .",
+            "content": "x = &quot;Hello, World!&quot; print(x) y = input(&quot;How is the weather today?&quot;) print(&quot;Nice!&quot;) . Hello, World! Nice! .",
             "url": "https://jishnus420.github.io/CSP-tri1/2022/08/21/FirstJupyterNB.html",
             "relUrl": "/2022/08/21/FirstJupyterNB.html",
             "date": " • Aug 21, 2022"
