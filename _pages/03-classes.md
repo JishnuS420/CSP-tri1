@@ -1,3 +1,9 @@
+---
+layout: page
+permalink: /classes/
+title: Classes
+---
+
 <table>
     <tr>
      <th>Week<th>
