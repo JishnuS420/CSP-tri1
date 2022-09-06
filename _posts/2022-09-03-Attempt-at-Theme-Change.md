@@ -2,7 +2,7 @@
 toc: true
 layout: post
 description: The failure of applying the theme midnight to my fastpages
-categories: [markdown][week2]
+categories: [markdown]
 title: Attempt at Midnight Theme for Fastpages
 author: Jishnu Singiresu
 show_tags: true
