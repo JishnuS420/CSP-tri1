@@ -14,4 +14,8 @@ Input: This is what the user inputs into the code for an output
 
 Output: Based on the user's output the code will give something to the user
 
-Procedural Abstraction: Grouping a sequence of commands  and is used repeatedly
+Procedural Abstraction: Grouping a sequence of commands so it can be used repeatedly
+
+HTML Fragment: 
+
+Data Abstraction: 
