@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Attempt at Midnight Theme for Fastpages",
-            "content": "The minima theme is applied as default when you copy and create your Fastpage but I attempted to change that and input a different theme to see how it would change the site here is the default settings found in _config.yml: .",
+            "content": "The minima theme is applied as default when you copy and create your Fastpage but I attempted to change that and input a different theme to see how it would change the site here is the default settings found in _config.yml: . I then went on to change the remote-theme to the midnight theme: . I then pushed these changes and when I booted up my site again, it was completely different and multiple things were broken, for example, the bar at the top was not there and some of the posts where not working like they would normally: .",
             "url": "https://jishnus420.github.io/CSP-tri1/markdown/2022/09/03/Attempt-at-Theme-Change.html",
             "relUrl": "/markdown/2022/09/03/Attempt-at-Theme-Change.html",
             "date": " • Sep 3, 2022"
