@@ -10,8 +10,8 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Code for holding key information using keys and values" />
 <meta property="og:description" content="Code for holding key information using keys and values" />
-<link rel="canonical" href="https://jishnus420.github.io/CSP-tri1/notebook/ldi" />
-<meta property="og:url" content="https://jishnus420.github.io/CSP-tri1/notebook/ldi" />
+<link rel="canonical" href="https://jishnus420.github.io/CSP-tri1/notebook/LDI.webp" />
+<meta property="og:url" content="https://jishnus420.github.io/CSP-tri1/notebook/LDI.webp" />
 <meta property="og:site_name" content="Jishnu Singiresu" />
 <meta property="og:image" content="https://jishnus420.github.io/CSP-tri1/images/" />
 <meta property="og:type" content="article" />
@@ -20,7 +20,7 @@
 <meta property="twitter:image" content="https://jishnus420.github.io/CSP-tri1/images/" />
 <meta property="twitter:title" content="Lists, Dictionaries, and Iterations" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-09-04T00:00:00-05:00","datePublished":"2022-09-04T00:00:00-05:00","description":"Code for holding key information using keys and values","headline":"Lists, Dictionaries, and Iterations","image":"https://jishnus420.github.io/CSP-tri1/images/","mainEntityOfPage":{"@type":"WebPage","@id":"https://jishnus420.github.io/CSP-tri1/notebook/ldi"},"url":"https://jishnus420.github.io/CSP-tri1/notebook/ldi"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-09-04T00:00:00-05:00","datePublished":"2022-09-04T00:00:00-05:00","description":"Code for holding key information using keys and values","headline":"Lists, Dictionaries, and Iterations","image":"https://jishnus420.github.io/CSP-tri1/images/","mainEntityOfPage":{"@type":"WebPage","@id":"https://jishnus420.github.io/CSP-tri1/notebook/LDI.webp"},"url":"https://jishnus420.github.io/CSP-tri1/notebook/LDI.webp"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/CSP-tri1/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://jishnus420.github.io/CSP-tri1/feed.xml" title="Jishnu Singiresu" /><link rel="shortcut icon" type="image/x-icon" href="/CSP-tri1/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -710,7 +710,7 @@ Correct answers in Random: 1 out of 1
         theme="github-light"
         crossorigin="anonymous"
         async>
-</script><a class="u-url" href="/CSP-tri1/notebook/ldi" hidden></a>
+</script><a class="u-url" href="/CSP-tri1/notebook/LDI.webp" hidden></a>
 </article>
 
       </div>
