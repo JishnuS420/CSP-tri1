@@ -4,21 +4,23 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>While Loops | Jishnu Singiresu</title>
+<title>Lists, Dictionaries, and Iterations | Jishnu Singiresu</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="While Loops" />
+<meta property="og:title" content="Lists, Dictionaries, and Iterations" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="APCSP:Tri 1" />
-<meta property="og:description" content="APCSP:Tri 1" />
-<link rel="canonical" href="https://jishnus420.github.io/CSP-tri1/2022/09/04/Lists-Dictionaries-Iterations.html" />
-<meta property="og:url" content="https://jishnus420.github.io/CSP-tri1/2022/09/04/Lists-Dictionaries-Iterations.html" />
+<meta name="description" content="Code for holding key information using keys and values" />
+<meta property="og:description" content="Code for holding key information using keys and values" />
+<link rel="canonical" href="https://jishnus420.github.io/CSP-tri1/notebook/ldi" />
+<meta property="og:url" content="https://jishnus420.github.io/CSP-tri1/notebook/ldi" />
 <meta property="og:site_name" content="Jishnu Singiresu" />
+<meta property="og:image" content="https://jishnus420.github.io/CSP-tri1/images/" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2022-09-04T00:00:00-05:00" />
-<meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="While Loops" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://jishnus420.github.io/CSP-tri1/images/" />
+<meta property="twitter:title" content="Lists, Dictionaries, and Iterations" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-09-04T00:00:00-05:00","datePublished":"2022-09-04T00:00:00-05:00","description":"APCSP:Tri 1","headline":"While Loops","mainEntityOfPage":{"@type":"WebPage","@id":"https://jishnus420.github.io/CSP-tri1/2022/09/04/Lists-Dictionaries-Iterations.html"},"url":"https://jishnus420.github.io/CSP-tri1/2022/09/04/Lists-Dictionaries-Iterations.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-09-04T00:00:00-05:00","datePublished":"2022-09-04T00:00:00-05:00","description":"Code for holding key information using keys and values","headline":"Lists, Dictionaries, and Iterations","image":"https://jishnus420.github.io/CSP-tri1/images/","mainEntityOfPage":{"@type":"WebPage","@id":"https://jishnus420.github.io/CSP-tri1/notebook/ldi"},"url":"https://jishnus420.github.io/CSP-tri1/notebook/ldi"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/CSP-tri1/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://jishnus420.github.io/CSP-tri1/feed.xml" title="Jishnu Singiresu" /><link rel="shortcut icon" type="image/x-icon" href="/CSP-tri1/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -73,7 +75,7 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">While Loops</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-09-04T00:00:00-05:00" itemprop="datePublished">
+    <h1 class="post-title p-name" itemprop="name headline">Lists, Dictionaries, and Iterations</h1><p class="page-description">Code for holding key information using keys and values</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-09-04T00:00:00-05:00" itemprop="datePublished">
         Sep 4, 2022
       </time>
        • <span class="read-time" title="Estimated read time">
@@ -116,7 +118,12 @@ window.onload = wrap_img;
       </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <!--
+    <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h1"><a href="#Loops">Loops </a></li>
+<li class="toc-entry toc-h1"><a href="#While-Loops">While Loops </a></li>
+<li class="toc-entry toc-h1"><a href="#Reversed-While-Loop">Reversed While Loop </a></li>
+<li class="toc-entry toc-h1"><a href="#Recursive-Loops">Recursive Loops </a></li>
+</ul><!--
 #################################################
 ### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
 #################################################
@@ -125,21 +132,6 @@ window.onload = wrap_img;
 
 <div class="container" id="notebook-container">
         
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>title: Lists, Dictionaries, and Iterations </li>
-<li>toc: true</li>
-<li>comments: true</li>
-<li>image: /images/</li>
-<li>permalink: /notebook/ldi</li>
-<li>tags: [collegeboard]
-### Code for holding key information using keys and values</li>
-</ul>
-
-</div>
-</div>
-</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -150,20 +142,20 @@ window.onload = wrap_img;
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
 
 <span class="c1"># variable of type string</span>
-<span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;Jishnu&quot;</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Name:&quot;</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">name</span><span class="p">))</span>
+<span class="n">name</span> <span class="o">=</span> <span class="s2">"Jishnu"</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Name:"</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">name</span><span class="p">))</span>
 
 <span class="c1"># variable of type integer</span>
 <span class="n">age</span> <span class="o">=</span> <span class="mi">16</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Age:&quot;</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">age</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Age:"</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">age</span><span class="p">))</span>
 
 <span class="c1"># variable of type float</span>
 <span class="n">grade</span> <span class="o">=</span> <span class="mi">11</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Grade:&quot;</span><span class="p">,</span> <span class="n">grade</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">grade</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Grade:"</span><span class="p">,</span> <span class="n">grade</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">grade</span><span class="p">))</span>
 
 <span class="c1"># another variable of type string</span>
-<span class="n">favorite_color</span> <span class="o">=</span> <span class="s2">&quot; Blue&quot;</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Favorite Color:&quot;</span><span class="p">,</span> <span class="n">favorite_color</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">favorite_color</span><span class="p">))</span>
+<span class="n">favorite_color</span> <span class="o">=</span> <span class="s2">" Blue"</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Favorite Color:"</span><span class="p">,</span> <span class="n">favorite_color</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">favorite_color</span><span class="p">))</span>
 
 
 
@@ -171,38 +163,38 @@ window.onload = wrap_img;
 
 <span class="c1"># variable of type list (many values in one variable)</span>
 
-<span class="n">langs</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Python&quot;</span><span class="p">,</span> <span class="s2">&quot;HTML&quot;</span><span class="p">,</span> <span class="s2">&quot;CSS&quot;</span><span class="p">,</span> <span class="s2">&quot;C&quot;</span><span class="p">,</span> <span class="s2">&quot;Java&quot;</span><span class="p">,</span> <span class="s2">&quot;JavaScript&quot;</span><span class="p">,</span> <span class="s2">&quot;C&quot;</span><span class="p">,</span> <span class="s2">&quot;R&quot;</span><span class="p">,</span> <span class="s2">&quot;C++&quot;</span><span class="p">,</span> <span class="s2">&quot;Bash&quot;</span><span class="p">]</span>
+<span class="n">langs</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"Python"</span><span class="p">,</span> <span class="s2">"HTML"</span><span class="p">,</span> <span class="s2">"CSS"</span><span class="p">,</span> <span class="s2">"C"</span><span class="p">,</span> <span class="s2">"Java"</span><span class="p">,</span> <span class="s2">"JavaScript"</span><span class="p">,</span> <span class="s2">"C"</span><span class="p">,</span> <span class="s2">"R"</span><span class="p">,</span> <span class="s2">"C++"</span><span class="p">,</span> <span class="s2">"Bash"</span><span class="p">]</span>
 <span class="n">random_lang</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">langs</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Random Language:&quot;</span><span class="p">,</span> <span class="n">random_lang</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Random Language:"</span><span class="p">,</span> <span class="n">random_lang</span><span class="p">)</span>
 
-<span class="n">dream_cars</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Toyota Supra&quot;</span><span class="p">,</span> <span class="s2">&quot;McLaren 750&quot;</span><span class="p">,</span> <span class="s2">&quot;Buggati Chiron&quot;</span><span class="p">,</span> <span class="s2">&quot;Tesla Roadster&quot;</span><span class="p">]</span>
+<span class="n">dream_cars</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"Toyota Supra"</span><span class="p">,</span> <span class="s2">"McLaren 750"</span><span class="p">,</span> <span class="s2">"Buggati Chiron"</span><span class="p">,</span> <span class="s2">"Tesla Roadster"</span><span class="p">]</span>
 <span class="n">random_car</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">dream_cars</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Random Dream Car:&quot;</span><span class="p">,</span> <span class="n">random_car</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Random Dream Car:"</span><span class="p">,</span> <span class="n">random_car</span><span class="p">)</span>
 
 <span class="nb">print</span><span class="p">()</span>
 
 <span class="c1"># variable of type dictionary (a group of keys and values)</span>
 <span class="n">person</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s2">&quot;Name&quot;</span><span class="p">:</span> <span class="n">name</span><span class="p">,</span>
-    <span class="s2">&quot;Age&quot;</span><span class="p">:</span> <span class="n">age</span><span class="p">,</span>
-    <span class="s2">&quot;Grade&quot;</span><span class="p">:</span> <span class="n">grade</span><span class="p">,</span>
-    <span class="s2">&quot;Languages&quot;</span><span class="p">:</span> <span class="n">langs</span><span class="p">,</span>
-    <span class="s2">&quot;Favorite Color&quot;</span><span class="p">:</span> <span class="n">favorite_color</span>
+    <span class="s2">"Name"</span><span class="p">:</span> <span class="n">name</span><span class="p">,</span>
+    <span class="s2">"Age"</span><span class="p">:</span> <span class="n">age</span><span class="p">,</span>
+    <span class="s2">"Grade"</span><span class="p">:</span> <span class="n">grade</span><span class="p">,</span>
+    <span class="s2">"Languages"</span><span class="p">:</span> <span class="n">langs</span><span class="p">,</span>
+    <span class="s2">"Favorite Color"</span><span class="p">:</span> <span class="n">favorite_color</span>
 <span class="p">}</span>
 
 <span class="c1"># prints what is in the person dictionary without brackets</span>
-<span class="nb">print</span><span class="p">(</span><span class="o">*</span><span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">k</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;:&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">v</span><span class="p">)</span> <span class="k">for</span> <span class="n">k</span><span class="p">,</span><span class="n">v</span> <span class="ow">in</span> <span class="n">person</span><span class="o">.</span><span class="n">items</span><span class="p">()])</span>
+<span class="nb">print</span><span class="p">(</span><span class="o">*</span><span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">k</span><span class="p">)</span> <span class="o">+</span> <span class="s1">':'</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">v</span><span class="p">)</span> <span class="k">for</span> <span class="n">k</span><span class="p">,</span><span class="n">v</span> <span class="ow">in</span> <span class="n">person</span><span class="o">.</span><span class="n">items</span><span class="p">()])</span>
 
 
-<span class="n">games</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Valorant&quot;</span><span class="p">,</span> <span class="s2">&quot;Apex Legends&quot;</span><span class="p">,</span> <span class="s2">&quot;League of Legends&quot;</span><span class="p">,</span> <span class="s2">&quot;Fortnite&quot;</span><span class="p">,</span> <span class="s2">&quot;Minecraft&quot;</span><span class="p">,</span> <span class="s2">&quot;Pokemon&quot;</span><span class="p">,</span> <span class="s2">&quot;Zelda:BOTW&quot;</span><span class="p">,</span> <span class="s2">&quot;GTA&quot;</span><span class="p">]</span>
+<span class="n">games</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"Valorant"</span><span class="p">,</span> <span class="s2">"Apex Legends"</span><span class="p">,</span> <span class="s2">"League of Legends"</span><span class="p">,</span> <span class="s2">"Fortnite"</span><span class="p">,</span> <span class="s2">"Minecraft"</span><span class="p">,</span> <span class="s2">"Pokemon"</span><span class="p">,</span> <span class="s2">"Zelda:BOTW"</span><span class="p">,</span> <span class="s2">"GTA"</span><span class="p">]</span>
 <span class="n">games</span><span class="o">.</span><span class="n">reverse</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">Reversed List:&#39;</span><span class="p">),</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;, &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">games</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'</span><span class="se">\n</span><span class="s1">Reversed List:'</span><span class="p">),</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">', '</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">games</span><span class="p">))</span>
 
 
 <span class="n">random</span><span class="o">.</span><span class="n">shuffle</span><span class="p">(</span><span class="n">games</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">Random Order:&#39;</span><span class="p">),</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;, &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">games</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'</span><span class="se">\n</span><span class="s1">Random Order:'</span><span class="p">),</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">', '</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">games</span><span class="p">))</span>
 </pre></div>
 
     </div>
@@ -215,21 +207,21 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Name: Jishnu &lt;class &#39;str&#39;&gt;
-Age: 16 &lt;class &#39;int&#39;&gt;
-Grade: 11 &lt;class &#39;int&#39;&gt;
-Favorite Color:  Blue &lt;class &#39;str&#39;&gt;
+<pre>Name: Jishnu &lt;class 'str'&gt;
+Age: 16 &lt;class 'int'&gt;
+Grade: 11 &lt;class 'int'&gt;
+Favorite Color:  Blue &lt;class 'str'&gt;
 
-Random Language: R
+Random Language: C
 Random Dream Car: Tesla Roadster
 
-Name:Jishnu Age:16 Grade:11 Languages:[&#39;Python&#39;, &#39;HTML&#39;, &#39;CSS&#39;, &#39;C&#39;, &#39;Java&#39;, &#39;JavaScript&#39;, &#39;C&#39;, &#39;R&#39;, &#39;C++&#39;, &#39;Bash&#39;] Favorite Color: Blue
+Name:Jishnu Age:16 Grade:11 Languages:['Python', 'HTML', 'CSS', 'C', 'Java', 'JavaScript', 'C', 'R', 'C++', 'Bash'] Favorite Color: Blue
 
 Reversed List:
 GTA, Zelda:BOTW, Pokemon, Minecraft, Fortnite, League of Legends, Apex Legends, Valorant
 
 Random Order:
-Minecraft, Pokemon, Zelda:BOTW, Valorant, GTA, Fortnite, Apex Legends, League of Legends
+Valorant, Apex Legends, Minecraft, Fortnite, Zelda:BOTW, GTA, League of Legends, Pokemon
 </pre>
 </div>
 </div>
@@ -253,22 +245,22 @@ Minecraft, Pokemon, Zelda:BOTW, Valorant, GTA, Fortnite, Apex Legends, League of
 
 <span class="c1"># Append to List a Dictionary of key/values related to a person and hobbies</span>
 <span class="n">People</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
-    <span class="s2">&quot;FirstName&quot;</span><span class="p">:</span> <span class="s2">&quot;Jishnu&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;LastName&quot;</span><span class="p">:</span> <span class="s2">&quot;Singiresu&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;DOB&quot;</span><span class="p">:</span> <span class="s2">&quot;April 20&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Email&quot;</span><span class="p">:</span> <span class="s2">&quot;broburn123@gmail.com&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Dream Car&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;McLaren 750&quot;</span><span class="p">],</span>
-    <span class="s2">&quot;Hobbies&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;Sleeping&quot;</span><span class="p">,</span> <span class="s2">&quot;Playing Games&quot;</span><span class="p">,</span> <span class="s2">&quot;Hanging Out with Friends&quot;</span><span class="p">]</span>
+    <span class="s2">"FirstName"</span><span class="p">:</span> <span class="s2">"Jishnu"</span><span class="p">,</span>
+    <span class="s2">"LastName"</span><span class="p">:</span> <span class="s2">"Singiresu"</span><span class="p">,</span>
+    <span class="s2">"DOB"</span><span class="p">:</span> <span class="s2">"April 20"</span><span class="p">,</span>
+    <span class="s2">"Email"</span><span class="p">:</span> <span class="s2">"broburn123@gmail.com"</span><span class="p">,</span>
+    <span class="s2">"Dream Car"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"McLaren 750"</span><span class="p">],</span>
+    <span class="s2">"Hobbies"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"Sleeping"</span><span class="p">,</span> <span class="s2">"Playing Games"</span><span class="p">,</span> <span class="s2">"Hanging Out with Friends"</span><span class="p">]</span>
 <span class="p">})</span>
 
 <span class="c1"># Append to List a 2nd Dictionary of key/values</span>
 <span class="n">People</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
-    <span class="s2">&quot;FirstName&quot;</span><span class="p">:</span> <span class="s2">&quot;Luka&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;LastName&quot;</span><span class="p">:</span> <span class="s2">&quot;Van Den Boomen&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;DOB&quot;</span><span class="p">:</span> <span class="s2">&quot;September 19&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Email&quot;</span><span class="p">:</span> <span class="s2">&quot;unknowndutch@gmail.com&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Dream Car&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;F1 Racing Car&quot;</span><span class="p">],</span>
-    <span class="s2">&quot;Hobbies&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;Biking&quot;</span><span class="p">,</span><span class="s2">&quot;Sleeping&quot;</span><span class="p">,</span> <span class="s2">&quot;Playing Video Games&quot;</span><span class="p">]</span>
+    <span class="s2">"FirstName"</span><span class="p">:</span> <span class="s2">"Luka"</span><span class="p">,</span>
+    <span class="s2">"LastName"</span><span class="p">:</span> <span class="s2">"Van Den Boomen"</span><span class="p">,</span>
+    <span class="s2">"DOB"</span><span class="p">:</span> <span class="s2">"September 19"</span><span class="p">,</span>
+    <span class="s2">"Email"</span><span class="p">:</span> <span class="s2">"unknowndutch@gmail.com"</span><span class="p">,</span>
+    <span class="s2">"Dream Car"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"F1 Racing Car"</span><span class="p">],</span>
+    <span class="s2">"Hobbies"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"Biking"</span><span class="p">,</span><span class="s2">"Sleeping"</span><span class="p">,</span> <span class="s2">"Playing Video Games"</span><span class="p">]</span>
 <span class="p">})</span>
 
 
@@ -286,7 +278,7 @@ Minecraft, Pokemon, Zelda:BOTW, Valorant, GTA, Fortnite, Apex Legends, League of
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[{&#39;FirstName&#39;: &#39;Jishnu&#39;, &#39;LastName&#39;: &#39;Singiresu&#39;, &#39;DOB&#39;: &#39;April 20&#39;, &#39;Email&#39;: &#39;broburn123@gmail.com&#39;, &#39;Dream Car&#39;: [&#39;McLaren 750&#39;], &#39;Hobbies&#39;: [&#39;Sleeping&#39;, &#39;Playing Games&#39;, &#39;Hanging Out with Friends&#39;]}, {&#39;FirstName&#39;: &#39;Luka&#39;, &#39;LastName&#39;: &#39;Van Den Boomen&#39;, &#39;DOB&#39;: &#39;September 19&#39;, &#39;Email&#39;: &#39;unknowndutch@gmail.com&#39;, &#39;Dream Car&#39;: [&#39;F1 Racing Car&#39;], &#39;Hobbies&#39;: [&#39;Biking&#39;, &#39;Sleeping&#39;, &#39;Playing Video Games&#39;]}]
+<pre>[{'FirstName': 'Jishnu', 'LastName': 'Singiresu', 'DOB': 'April 20', 'Email': 'broburn123@gmail.com', 'Dream Car': ['McLaren 750'], 'Hobbies': ['Sleeping', 'Playing Games', 'Hanging Out with Friends']}, {'FirstName': 'Luka', 'LastName': 'Van Den Boomen', 'DOB': 'September 19', 'Email': 'unknowndutch@gmail.com', 'Dream Car': ['F1 Racing Car'], 'Hobbies': ['Biking', 'Sleeping', 'Playing Video Games']}]
 </pre>
 </div>
 </div>
@@ -305,11 +297,11 @@ Minecraft, Pokemon, Zelda:BOTW, Valorant, GTA, Fortnite, Apex Legends, League of
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">print_data</span><span class="p">(</span><span class="n">person</span><span class="p">):</span> <span class="c1"># defines the data being printed</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Name:&quot;</span><span class="p">,</span> <span class="n">person</span><span class="p">[</span><span class="s2">&quot;FirstName&quot;</span><span class="p">],</span> <span class="n">person</span><span class="p">[</span><span class="s2">&quot;LastName&quot;</span><span class="p">])</span> <span class="c1"># Tells the computer to print certain things from the dictionary</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Birthday:&quot;</span><span class="p">,</span> <span class="n">person</span><span class="p">[</span><span class="s2">&quot;DOB&quot;</span><span class="p">])</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Email:&quot;</span><span class="p">,</span> <span class="n">person</span><span class="p">[</span><span class="s2">&quot;Email&quot;</span><span class="p">])</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Dream Car:&quot;</span><span class="p">,</span> <span class="s2">&quot;, &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">person</span><span class="p">[</span><span class="s2">&quot;Dream Car&quot;</span><span class="p">]))</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hobbies:&quot;</span><span class="p">,</span> <span class="s2">&quot;, &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">person</span><span class="p">[</span><span class="s2">&quot;Hobbies&quot;</span><span class="p">]))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Name:"</span><span class="p">,</span> <span class="n">person</span><span class="p">[</span><span class="s2">"FirstName"</span><span class="p">],</span> <span class="n">person</span><span class="p">[</span><span class="s2">"LastName"</span><span class="p">])</span> <span class="c1"># Tells the computer to print certain things from the dictionary</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Birthday:"</span><span class="p">,</span> <span class="n">person</span><span class="p">[</span><span class="s2">"DOB"</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Email:"</span><span class="p">,</span> <span class="n">person</span><span class="p">[</span><span class="s2">"Email"</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Dream Car:"</span><span class="p">,</span> <span class="s2">", "</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">person</span><span class="p">[</span><span class="s2">"Dream Car"</span><span class="p">]))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Hobbies:"</span><span class="p">,</span> <span class="s2">", "</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">person</span><span class="p">[</span><span class="s2">"Hobbies"</span><span class="p">]))</span>
     <span class="nb">print</span><span class="p">()</span>
 
 <span class="n">print_data</span><span class="p">(</span><span class="n">People</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> 
@@ -348,10 +340,12 @@ Hobbies: Biking, Sleeping, Playing Video Games
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Loops</p>
-
+<h1 id="Loops">
+<a class="anchor" href="#Loops" aria-hidden="true"><span class="octicon octicon-link"></span></a>Loops<a class="anchor-link" href="#Loops"> </a>
+</h1>
 </div>
 </div>
 </div>
@@ -418,6 +412,15 @@ Hobbies: Biking, Sleeping, Playing Video Games
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="While-Loops">
+<a class="anchor" href="#While-Loops" aria-hidden="true"><span class="octicon octicon-link"></span></a>While Loops<a class="anchor-link" href="#While-Loops"> </a>
+</h1>
+</div>
+</div>
+</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -427,7 +430,7 @@ Hobbies: Biking, Sleeping, Playing Video Games
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">while_loop</span><span class="p">():</span>       <span class="c1"># i starts at 0</span>
     <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">People</span><span class="p">):</span>      <span class="c1"># while i is less than the length of the dictionary (2), keep printing the people&#39;s data</span>
+    <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">People</span><span class="p">):</span>      <span class="c1"># while i is less than the length of the dictionary (2), keep printing the people's data</span>
         <span class="n">record</span> <span class="o">=</span> <span class="n">People</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
         <span class="n">print_data</span><span class="p">(</span><span class="n">record</span><span class="p">)</span>
         <span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span>
@@ -468,9 +471,12 @@ Hobbies: Biking, Sleeping, Playing Video Games
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Reversed-While-Loop">Reversed While Loop<a class="anchor-link" href="#Reversed-While-Loop"> </a></h1>
+<h1 id="Reversed-While-Loop">
+<a class="anchor" href="#Reversed-While-Loop" aria-hidden="true"><span class="octicon octicon-link"></span></a>Reversed While Loop<a class="anchor-link" href="#Reversed-While-Loop"> </a>
+</h1>
 </div>
 </div>
 </div>
@@ -487,7 +493,7 @@ Hobbies: Biking, Sleeping, Playing Video Games
         <span class="n">print_data</span><span class="p">(</span><span class="n">People</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
         <span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">-</span> <span class="mi">1</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;REVERSED WHILE LOOP</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"REVERSED WHILE LOOP</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
 <span class="n">while_loop_reverse</span><span class="p">()</span>
 </pre></div>
 
@@ -525,9 +531,12 @@ Hobbies: Sleeping, Playing Games, Hanging Out with Friends
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Recursive-Loops">Recursive Loops<a class="anchor-link" href="#Recursive-Loops"> </a></h1>
+<h1 id="Recursive-Loops">
+<a class="anchor" href="#Recursive-Loops" aria-hidden="true"><span class="octicon octicon-link"></span></a>Recursive Loops<a class="anchor-link" href="#Recursive-Loops"> </a>
+</h1>
 </div>
 </div>
 </div>
@@ -584,7 +593,15 @@ Hobbies: Biking, Sleeping, Playing Video Games
 
 
 
-  </div><a class="u-url" href="/CSP-tri1/2022/09/04/Lists-Dictionaries-Iterations.html" hidden></a>
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="JishnuS420/CSP-tri1"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/CSP-tri1/notebook/ldi" hidden></a>
 </article>
 
       </div>
