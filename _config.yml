@@ -62,7 +62,6 @@ google_analytics:
 
 show_comments: true
 
-scroll-behavior: smooth
 
 exclude:
   - docker-compose.yml
