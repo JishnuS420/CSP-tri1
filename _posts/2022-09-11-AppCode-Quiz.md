@@ -37,3 +37,13 @@ I decided to focus on one of my all time favorite shows and movie series, Star W
 ### Changes that can be implemented
  
 There are some changes and improvements that could take place, for example, it would be significantly better if I could loop some of the codes because it got really repetitive at a point and another thing that would make my life easier would be if I was more organized, maybe better planned a bit and it would have made coding the quiz much more easier, next time, I would also love to experiment with making a game instead of a quiz
+
+### Relating my Quiz to the Create Performance Task
+
+My quiz meets some of the Create Tasks' requirements and still needs some work though. With a little bit more practice and trying, I could probably make my Quiz meet the requirements. Some parts of the rubric that my quiz supports are:
+1. Program, Purpose and Function
+- Purpose: To test the user's knowledge on star wars and seeing if they fall for the tricks and can navigate through it
+- Function: The user can interact with the quiz start button and navigate through a series of questions, the first question provides a multiple choice and the 2nd one had a free response, the next page had a trick question where the user has to find the right button to continue and the free response is evaluated and is correct if the user inputs one of the right answers 
+- Input/Output: The quiz interacts with the user and the user can respond through clicks and typing their keyboard
+2. Testing
+- I gave the quiz to my friends to try and see if they come across any bugs and I also made sure to test the code whenever I added onto previous code or went on and made sure that any bugs were fixed or made clear.
