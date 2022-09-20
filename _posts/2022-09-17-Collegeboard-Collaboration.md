@@ -20,4 +20,4 @@ comments: true
 - Asking different people to test and describe their perspective on it 
 
 # Collegeboard Quiz:
-![]({{ site.baseurl }}/images/pre-theme-change.png)
+![]({{ site.baseurl }}/images/Collab-quiz.png)
