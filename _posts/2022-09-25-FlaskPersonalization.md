@@ -11,4 +11,4 @@ comments: true
 # Homepage customization:
 ![]({{ site.baseurl }}/images/sddasdsadasd.png)
 # Stub customization:
-![]({{ site.baseurl }}/images/dasdasdadasd.png)
+![]({{ site.baseurl }}/images/Screenshot 2022-09-26 134739.png)
