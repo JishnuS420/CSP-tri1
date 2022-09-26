@@ -9,4 +9,4 @@ show_tags: true
 comments: true
 ---
 
-![]({{ site.baseurl }}/images/Copy of Scrum Team Process - Emaad Mir, Edwin Abraham, Luka Van Den Boomen, Jishnu Singiresu.png)
+![]({{ site.baseurl }}/images/ScrumTeam.png)
