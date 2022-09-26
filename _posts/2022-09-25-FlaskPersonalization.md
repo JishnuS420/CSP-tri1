@@ -9,6 +9,6 @@ show_tags: true
 comments: true
 ---
 # Homepage customization:
-![]({{ site.baseurl }}/images/sddasdsadasd.png
+![]({{ site.baseurl }}/images/sddasdsadasd.png)
 # Stub customization:
-![]({{ site.baseurl }}/images/dasdasdadasd.png
+![]({{ site.baseurl }}/images/dasdasdadasd.png)
