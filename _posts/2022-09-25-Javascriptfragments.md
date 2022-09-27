@@ -32,3 +32,12 @@ div.appendChild(table);
 
 
 </script>
+
+<table>
+    <tr>
+        <td>Jishnu - Backend Developer</td>
+        <td>Luka - DevOps</td>
+        <td>Edwin - Frontend Developer</td>
+        <td>Emaad - Scrum Master</td>
+    </tr>
+</table>
