@@ -11,16 +11,16 @@ comments: true
 <script> 
 
 
-let teammates = ["Jishnu - Backend Developer", "Luka - DevOps", "Edwin - Frontend Developer", "Emaad - Scrum Master"];
+let people = ["Jishnu - Backend Developer", "Luka - DevOps", "Edwin - Frontend Developer", "Emaad - Scrum Master"];
 
 
 const table = document.createElement("table");
 const row = document.createElement("tr");
 
 
-for (let i = 0; i < teammates.length; i++) {
+for (let i = 0; i < people.length; i++) {
     let data = document.createElement("td");
-    let node = document.createTextNode(teammates[i]);
+    let node = document.createTextNode(people[i]);
     data.appendChild(node);
     row.appendChild(data);
 }
@@ -32,11 +32,3 @@ div.appendChild(table);
 
 
 </script>
-<table>
-    <tr>
-        <td>Jishnu - Backend Developer</td>
-        <td>Luka - DevOps</td>
-        <td>Edwin - Frontend Developer</td>
-        <td>Emaad - Scrum Master</td>
-    </tr>
-</table>
