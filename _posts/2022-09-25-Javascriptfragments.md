@@ -8,31 +8,6 @@ author: Jishnu Singiresu
 show_tags: true
 comments: true
 ---
-<script> 
-
-
-let people = ["Jishnu - Backend Developer", "Luka - DevOps", "Edwin - Frontend Developer", "Emaad - Scrum Master"];
-
-
-const table = document.createElement("table");
-const row = document.createElement("tr");
-
-
-for (let i = 0; i < people.length; i++) {
-    let data = document.createElement("td");
-    let node = document.createTextNode(people[i]);
-    data.appendChild(node);
-    row.appendChild(data);
-}
-
-table.appendChild(row);
-const div = document.getElementById("JavaScriptTable");
-div.appendChild(table);
-
-
-
-</script>
-
 <table>
     <tr>
         <td>Jishnu - Backend Developer</td>
