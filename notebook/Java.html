@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      2 min read
     
 </span></p>
 
@@ -224,6 +224,158 @@ window.onload = wrap_img;
 </div>
 </div>
 
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-javascript"><pre><span></span><span class="c1">// define a function to hold data for a Person</span>
+<span class="kd">function</span> <span class="nx">Person</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">ghID</span><span class="p">,</span> <span class="nx">classOf</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="nx">name</span><span class="p">;</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">ghID</span> <span class="o">=</span> <span class="nx">ghID</span><span class="p">;</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">classOf</span> <span class="o">=</span> <span class="nx">classOf</span><span class="p">;</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">role</span> <span class="o">=</span> <span class="s2">""</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">// define a setter for role in Person data</span>
+<span class="nx">Person</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">setRole</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">role</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">role</span> <span class="o">=</span> <span class="nx">role</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">// define a JSON conversion "method" associated with Person</span>
+<span class="nx">Person</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">toJSON</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kr">const</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{</span><span class="nx">name</span><span class="o">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">,</span> <span class="nx">ghID</span><span class="o">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">ghID</span><span class="p">,</span> <span class="nx">classOf</span><span class="o">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">classOf</span><span class="p">,</span> <span class="nx">role</span><span class="o">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">role</span><span class="p">};</span>
+    <span class="kr">const</span> <span class="nx">json</span> <span class="o">=</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">obj</span><span class="p">);</span>
+    <span class="k">return</span> <span class="nx">json</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">// make a new Person and assign to variable teacher</span>
+<span class="kd">var</span> <span class="nx">student</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Person</span><span class="p">(</span><span class="s2">"Emaad Mir"</span><span class="p">,</span> <span class="s2">"Emaad-Mir"</span><span class="p">,</span> <span class="mf">2025</span><span class="p">);</span>  <span class="c1">// object type is easy to work with in JavaScript</span>
+<span class="nx">logItType</span><span class="p">(</span><span class="nx">student</span><span class="p">);</span>  <span class="c1">// before role</span>
+<span class="nx">logItType</span><span class="p">(</span><span class="nx">student</span><span class="p">.</span><span class="nx">toJSON</span><span class="p">());</span>  <span class="c1">// ok to do this even though role is not yet defined</span>
+
+<span class="c1">// make a new Person and assign to variable teacher</span>
+<span class="kd">var</span> <span class="nx">teacher</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Person</span><span class="p">(</span><span class="s2">"Mr M"</span><span class="p">,</span> <span class="s2">"jm1021"</span><span class="p">,</span> <span class="mf">1977</span><span class="p">);</span>  <span class="c1">// object type is easy to work with in JavaScript</span>
+<span class="nx">logItType</span><span class="p">(</span><span class="nx">teacher</span><span class="p">);</span>  <span class="c1">// before role</span>
+<span class="nx">logItType</span><span class="p">(</span><span class="nx">teacher</span><span class="p">.</span><span class="nx">toJSON</span><span class="p">());</span>  <span class="c1">// ok to do this even though role is not yet defined</span>
+
+<span class="c1">// output of Object and JSON/string associated with Teacher</span>
+<span class="nx">student</span><span class="p">.</span><span class="nx">setRole</span><span class="p">(</span><span class="s2">"Student"</span><span class="p">);</span>   <span class="c1">// set the role</span>
+<span class="nx">logItType</span><span class="p">(</span><span class="nx">student</span><span class="p">);</span> 
+<span class="nx">logItType</span><span class="p">(</span><span class="nx">student</span><span class="p">.</span><span class="nx">toJSON</span><span class="p">());</span>
+
+<span class="c1">// output of Object and JSON/string associated with Teacher</span>
+<span class="nx">teacher</span><span class="p">.</span><span class="nx">setRole</span><span class="p">(</span><span class="s2">"Teacher"</span><span class="p">);</span>   <span class="c1">// set the role</span>
+<span class="nx">logItType</span><span class="p">(</span><span class="nx">teacher</span><span class="p">);</span> 
+<span class="nx">logItType</span><span class="p">(</span><span class="nx">teacher</span><span class="p">.</span><span class="nx">toJSON</span><span class="p">());</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+evalmachine.&lt;anonymous&gt;:23
+logItType(student);  // before role
+^
+
+ReferenceError: logItType is not defined
+    at evalmachine.&lt;anonymous&gt;:23:1
+    at ContextifyScript.Script.runInThisContext (vm.js:25:33)
+    at Object.runInThisContext (vm.js:97:38)
+    at run ([eval]:1020:15)
+    at onRunRequest ([eval]:864:18)
+    at onMessage ([eval]:828:13)
+    at emitTwo (events.js:106:13)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:758:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-javascript"><pre><span></span><span class="kd">function</span> <span class="nx">people</span><span class="p">(</span><span class="nx">DevOps</span><span class="p">,</span> <span class="nx">Backend</span><span class="p">,</span> <span class="nx">Frontend</span><span class="p">,</span> <span class="nx">Scrum</span><span class="p">){</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">DevOps</span> <span class="o">=</span> <span class="nx">DevOps</span><span class="p">;</span> 
+        <span class="k">this</span><span class="p">.</span><span class="nx">Backend</span> <span class="o">=</span> <span class="nx">Backend</span><span class="p">;</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">Frontend</span> <span class="o">=</span> <span class="nx">Frontend</span><span class="p">;</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">Scrum</span> <span class="o">=</span> <span class="nx">Scrum</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="kd">var</span> <span class="nx">people</span> <span class="o">=</span> <span class="p">[</span> 
+        <span class="k">new</span> <span class="nx">people</span><span class="p">(</span><span class="s2">"Luka"</span><span class="p">,</span> <span class="s2">"Jishnu"</span><span class="p">,</span> <span class="s2">"Edwin"</span><span class="p">,</span> <span class="s2">"Emaad"</span><span class="p">),</span>
+    <span class="p">];</span>
+
+    <span class="c1">// define a library and build Library objects and json</span>
+    <span class="kd">function</span> <span class="nx">library</span><span class="p">(</span><span class="nx">people</span><span class="p">){</span>  
+        <span class="c1">// add each book to library</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">people</span> <span class="o">=</span> <span class="nx">people</span><span class="p">;</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">library</span> <span class="o">=</span> <span class="p">[];</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">people</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">people</span> <span class="p">=&gt;</span> <span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">library</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">people</span><span class="p">);});</span>
+    <span class="p">}</span>
+    <span class="nx">printpeople</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">library</span><span class="p">(</span><span class="nx">people</span><span class="p">);</span>
+
+    <span class="nx">library</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">_toHtml</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">style</span> <span class="o">=</span> <span class="p">(</span>
+        <span class="s2">"display:inline-block;"</span> <span class="o">+</span>
+        <span class="s2">"border: 2px solid blue;"</span>
+    <span class="p">);</span>
+
+    <span class="kd">var</span> <span class="nx">body</span> <span class="o">=</span> <span class="s2">""</span><span class="p">;</span>
+
+    <span class="nx">body</span> <span class="o">+=</span> <span class="s2">"&lt;tr&gt;"</span><span class="p">;</span>
+    <span class="nx">body</span> <span class="o">+=</span> <span class="s2">"&lt;th&gt;"</span> <span class="o">+</span> <span class="s2">"Luka"</span> <span class="o">+</span> <span class="s2">"&lt;/th&gt;"</span><span class="p">;</span>
+    <span class="nx">body</span> <span class="o">+=</span> <span class="s2">"&lt;th&gt;"</span> <span class="o">+</span> <span class="s2">"Jishnu"</span> <span class="o">+</span> <span class="s2">"&lt;/th&gt;"</span><span class="p">;</span>
+    <span class="nx">body</span> <span class="o">+=</span> <span class="s2">"&lt;th&gt;"</span> <span class="o">+</span> <span class="s2">"Edwin"</span> <span class="o">+</span> <span class="s2">"&lt;/th&gt;"</span><span class="p">;</span>
+    <span class="nx">body</span> <span class="o">+=</span> <span class="s2">"&lt;th&gt;"</span> <span class="o">+</span> <span class="s2">"Emaad"</span> <span class="o">+</span> <span class="s2">"&lt;/th&gt;"</span><span class="p">;</span>
+    <span class="nx">body</span> <span class="o">+=</span> <span class="s2">"&lt;/tr&gt;"</span><span class="p">;</span>
+
+    <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">row</span> <span class="k">of</span> <span class="nx">printpeople</span><span class="p">.</span><span class="nx">library</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">body</span> <span class="o">+=</span> <span class="s2">"&lt;tr&gt;"</span><span class="p">;</span>
+    <span class="nx">body</span> <span class="o">+=</span> <span class="s2">"&lt;td&gt;"</span> <span class="o">+</span> <span class="nx">row</span><span class="p">.</span><span class="nx">people</span> <span class="o">+</span> <span class="s2">"&lt;/td&gt;"</span><span class="p">;</span>
+    <span class="nx">body</span> <span class="o">+=</span> <span class="s2">"&lt;tr&gt;"</span><span class="p">;</span>
+    <span class="p">}</span>
+
+
+    <span class="c1">// Build and HTML fragment of div, table, table body</span>
+    <span class="k">return</span> <span class="p">(</span>
+        <span class="s2">"&lt;div style='"</span> <span class="o">+</span> <span class="nx">style</span> <span class="o">+</span> <span class="s2">"'&gt;"</span> <span class="o">+</span>
+            <span class="s2">"&lt;table&gt;"</span> <span class="o">+</span>
+                <span class="nx">body</span> <span class="o">+</span>
+            <span class="s2">"&lt;/table&gt;"</span> <span class="o">+</span>
+        <span class="s2">"&lt;/div&gt;"</span>
+        <span class="p">);</span>
+    <span class="p">};</span>
+    
+    <span class="nx">$$</span><span class="p">.</span><span class="nx">html</span><span class="p">(</span><span class="nx">people</span><span class="p">.</span><span class="nx">_toHtml</span><span class="p">());</span>
+</pre></div>
+
+    </div>
 </div>
 </div>
 
