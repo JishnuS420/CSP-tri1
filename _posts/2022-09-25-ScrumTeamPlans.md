@@ -8,5 +8,5 @@ author: Jishnu Singiresu
 show_tags: true
 comments: true
 ---
-
+# This is my teams Scrum Planning:
 ![]({{ site.baseurl }}/images/ScrumTeam.png)
