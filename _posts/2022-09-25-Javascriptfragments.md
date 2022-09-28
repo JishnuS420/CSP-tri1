@@ -1,7 +1,7 @@
 ---
 toc: true
 layout: post
-description: Scrum Team
+description: Scrum Team 
 categories: [markdown, Week 5]
 title: Javascript Fragments
 author: Jishnu Singiresu
@@ -16,3 +16,28 @@ comments: true
         <td>Emaad - Scrum Master</td>
     </tr>
 </table>
+
+<script> 
+
+
+let teammates = ["Jishnu - Backend Developer", "Luka - DevOps", "Edwin - Frontend Developer", "Emaad - Scrum Master"];
+
+
+const table = document.createElement("table");
+const row = document.createElement("tr");
+
+
+for (let i = 0; i < teammates.length; i++) {
+    let data = document.createElement("td");
+    let node = document.createTextNode(teammates[i]);
+    data.appendChild(node);
+    row.appendChild(data);
+}
+
+table.appendChild(row);
+const div = document.getElementById("JavaScriptTable");
+div.appendChild(table);
+
+
+
+</script>
