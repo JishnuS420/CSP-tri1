@@ -111,6 +111,32 @@ window.onload = wrap_img;
     </tr>
 </table>
 
+<script> 
+
+
+let teammates = ["Jishnu - Backend Developer", "Luka - DevOps", "Edwin - Frontend Developer", "Emaad - Scrum Master"];
+
+
+const table = document.createElement("table");
+const row = document.createElement("tr");
+
+
+for (let i = 0; i < teammates.length; i++) {
+    let data = document.createElement("td");
+    let node = document.createTextNode(teammates[i]);
+    data.appendChild(node);
+    row.appendChild(data);
+}
+
+table.appendChild(row);
+const div = document.getElementById("JavaScriptTable");
+div.appendChild(table);
+
+
+
+</script>
+
+
   </div><!-- from https://github.com/utterance/utterances -->
 <script src="https://utteranc.es/client.js"
         repo="JishnuS420/CSP-tri1"
