@@ -733,6 +733,63 @@ Rank Url: https://coinranking.com/coin/Pe93bIOD2+lidodaotoken-ldo
 </div>
     
 
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="n">url</span> <span class="o">=</span> <span class="s2">"https://wft-geo-db.p.rapidapi.com/v1/geo/adminDivisions"</span>
+
+<span class="n">querystring</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"id"</span><span class="p">:</span><span class="mi">3517016</span><span class="p">,</span><span class="s2">"wikiDataId"</span><span class="p">:</span><span class="s2">"Q228"</span><span class="p">,</span><span class="s2">"name"</span><span class="p">:</span><span class="s2">"Andorra"</span><span class="p">,</span><span class="s2">"country"</span><span class="p">:</span><span class="s2">"Andorra"</span><span class="p">,</span><span class="s2">"countryCode"</span><span class="p">:</span><span class="s2">"AD"</span><span class="p">,</span><span class="s2">"latitude"</span><span class="p">:</span><span class="mf">42.558333333</span><span class="p">,</span><span class="s2">"longitude"</span><span class="p">:</span><span class="mf">1.555277777</span><span class="p">,</span><span class="s2">"population"</span><span class="p">:</span><span class="mi">78151</span><span class="p">}</span>
+
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+	<span class="s2">"X-RapidAPI-Key"</span><span class="p">:</span> <span class="s2">"48e23c6bf3msh9a6baf3e68d9a4ep14546ajsn1a39e98c4ad5"</span><span class="p">,</span>
+	<span class="s2">"X-RapidAPI-Host"</span><span class="p">:</span> <span class="s2">"wft-geo-db.p.rapidapi.com"</span>
+<span class="p">}</span>
+
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s2">"GET"</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
+
+<span class="c1"># print(response.text)</span>
+
+<span class="n">countries</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'data'</span><span class="p">)</span> <span class="c1"># set countries equal tp data</span>
+<span class="k">for</span> <span class="n">country</span> <span class="ow">in</span> <span class="n">countries</span><span class="p">:</span>  <span class="c1"># countries is a list above</span>
+    <span class="k">if</span> <span class="n">country</span><span class="p">[</span><span class="s2">"name"</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"Andorra"</span><span class="p">:</span>  <span class="c1"># this filters for countries with the name Andorra</span>
+        <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">country</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>  <span class="c1"># this finds key, value pairs in the country Andorra</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>id 3517016
+wikiDataId Q228
+name Andorra
+country Andorra
+countryCode AD
+latitude 42.558333333
+longitude 1.555277777
+population 78151
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 
