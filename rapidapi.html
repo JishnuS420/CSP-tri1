@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      41 min read
+      42 min read
     
 </span></p>
 
@@ -702,6 +702,8 @@ Rank Url: https://coinranking.com/coin/Pe93bIOD2+lidodaotoken-ldo
 
 <span class="n">url</span> <span class="o">=</span> <span class="s2">"https://cards-against-humanity.p.rapidapi.com/black"</span>
 
+<span class="n">querystring</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"text"</span><span class="p">:</span><span class="s2">"I woke up in a cold sweat after an eerily realistic nightmare about _."</span><span class="p">,</span><span class="s2">"set"</span><span class="p">:</span><span class="s2">"Evil Apples"</span><span class="p">,</span><span class="s2">"pick"</span><span class="p">:</span><span class="mi">1</span><span class="p">}</span> <span class="c1"># </span>
+
 <span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
 	<span class="s2">"X-RapidAPI-Key"</span><span class="p">:</span> <span class="s2">"48e23c6bf3msh9a6baf3e68d9a4ep14546ajsn1a39e98c4ad5"</span><span class="p">,</span>
 	<span class="s2">"X-RapidAPI-Host"</span><span class="p">:</span> <span class="s2">"cards-against-humanity.p.rapidapi.com"</span>
@@ -710,6 +712,12 @@ Rank Url: https://coinranking.com/coin/Pe93bIOD2+lidodaotoken-ldo
 <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s2">"GET"</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+
+<span class="n">texts</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'data'</span><span class="p">)</span> <span class="c1"># set texts equal tp data</span>
+<span class="k">for</span> <span class="n">text</span> <span class="ow">in</span> <span class="n">texts</span><span class="p">:</span>  <span class="c1"># texts is a list above</span>
+    <span class="k">if</span> <span class="n">text</span><span class="p">[</span><span class="s2">"text"</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"I woke up in a cold sweat after an eerily realistic nightmare about _."</span><span class="p">:</span>  <span class="c1"># this filters for texts with I woke up in a cold sweat after an eerily realistic nightmare about _.</span>
+        <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">country</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>  <span class="c1"># this finds key, value pairs in the text "I woke up in a cold sweat after an eerily realistic nightmare about _.""</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -722,8 +730,25 @@ Rank Url: https://coinranking.com/coin/Pe93bIOD2+lidodaotoken-ldo
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>{"text":"I woke up in a cold sweat after an eerily realistic nightmare about _.","set":"Evil Apples","pick":1}
+<pre>{"text":"_ is a bad idea. The More You Know ...","set":"Words Against Morality: Volume 1","pick":1}
 </pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">TypeError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">/home/jishnus/vscode/CSP-tri1/_notebooks/2022-10-03-PBL-python_rapidapi.ipynb Cell 13</span> in <span class="ansi-cyan-fg">&lt;cell line: 17&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/jishnus/vscode/CSP-tri1/_notebooks/2022-10-03-PBL-python_rapidapi.ipynb#X15sdnNjb2RlLXJlbW90ZQ%3D%3D?line=13'&gt;14&lt;/a&gt;</span> print(response.text)
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/jishnus/vscode/CSP-tri1/_notebooks/2022-10-03-PBL-python_rapidapi.ipynb#X15sdnNjb2RlLXJlbW90ZQ%3D%3D?line=15'&gt;16&lt;/a&gt;</span> texts = response.json().get('data') # set texts equal tp data
+<span class="ansi-green-fg">---&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/jishnus/vscode/CSP-tri1/_notebooks/2022-10-03-PBL-python_rapidapi.ipynb#X15sdnNjb2RlLXJlbW90ZQ%3D%3D?line=16'&gt;17&lt;/a&gt;</span> for text in texts:  # texts is a list above
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/jishnus/vscode/CSP-tri1/_notebooks/2022-10-03-PBL-python_rapidapi.ipynb#X15sdnNjb2RlLXJlbW90ZQ%3D%3D?line=17'&gt;18&lt;/a&gt;</span>     if text["text"] == "I woke up in a cold sweat after an eerily realistic nightmare about _.":  # this filters for texts with I woke up in a cold sweat after an eerily realistic nightmare about _.
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/jishnus/vscode/CSP-tri1/_notebooks/2022-10-03-PBL-python_rapidapi.ipynb#X15sdnNjb2RlLXJlbW90ZQ%3D%3D?line=18'&gt;19&lt;/a&gt;</span>         for key, value in country.items():  # this finds key, value pairs in the text "I woke up in a cold sweat after an eerily realistic nightmare about _.""
+
+<span class="ansi-red-fg">TypeError</span>: 'NoneType' object is not iterable</pre>
 </div>
 </div>
 
