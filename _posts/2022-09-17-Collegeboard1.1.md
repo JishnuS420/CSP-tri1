@@ -3,7 +3,7 @@ toc: true
 layout: post
 description: Collegeboard on collaboration
 categories: [markdown, Week 4]
-title: Collaboration Notes 
+title: 1.1 Notes 
 author: Jishnu Singiresu
 show_tags: true
 comments: true
