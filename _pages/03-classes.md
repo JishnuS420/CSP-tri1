@@ -8,6 +8,7 @@ toc: true
 > This page is a online notebook for all my CSP Week Projects and other stuff
  
 # CSP - Tri 1:
+
 <table>
     <table>
     <tr>
@@ -48,11 +49,16 @@ toc: true
     </tr>
 </table>
 
-# Review Tickets: 
+
+## Review Tickets: 
 https://github.com/users/JishnuS420/projects/1/views/1
 
-# Collegeboard Notes:
+
+## Collegeboard Notes:
 4.1 Notes: https://jishnus420.github.io/CSP-tri1/markdown/week%208/collegeboard/2022/10/16/4.1-Notes.html
+
 1.4 Notes: https://jishnus420.github.io/CSP-tri1/markdown/week%207/collegeboard/2022/10/06/1.4-Notes.html
+
 1.3 Notes: https://jishnus420.github.io/CSP-tri1/markdown/week%206/collegeboard/2022/09/30/1.3-Notes.html
+
 1.2 Notes: https://jishnus420.github.io/CSP-tri1/markdown/week%205/collegeboard/2022/09/25/Collegeboard1.2.html
