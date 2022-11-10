@@ -2,7 +2,7 @@
 toc: true
 layout: post
 description: Collegeboard on program, Function, and Procedure
-categories: [markdown, Week 5]
+categories: [markdown, Week 5, collegeboard]
 title: Collegeboard 1.2 Notes
 author: Jishnu Singiresu
 show_tags: true

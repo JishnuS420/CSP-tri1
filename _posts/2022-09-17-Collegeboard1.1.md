@@ -2,7 +2,7 @@
 toc: true
 layout: post
 description: Collegeboard on collaboration
-categories: [markdown, Week 4]
+categories: [markdown, Week 4, collegeboard]
 title: 1.1 Notes 
 author: Jishnu Singiresu
 show_tags: true
