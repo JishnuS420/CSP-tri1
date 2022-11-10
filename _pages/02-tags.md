@@ -5,6 +5,7 @@ title: Tags
 search_exclude: true
 ---
 
+
 {% if site.categories.size > 0 %}
 <h2>Contents</h2>
 
