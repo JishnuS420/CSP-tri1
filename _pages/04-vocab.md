@@ -16,6 +16,14 @@ Output: Based on the user's output the code will give something to the user
 
 Procedural Abstraction: Grouping a sequence of commands so it can be used repeatedly, Organizing into categories
 
-HTML Fragment: 
+HTML Fragment: A block of HTML that you can then embed in your document at key locations
 
-Data Abstraction: 
+Data Abstraction: Reduction of a particular body of data to a simplified representation of the whole
+
+# Additional Vocab
+
+pwd = print working directory
+mkdir = make directory
+cd = change directory
+ls = list directory
+rm -rf = remove directory, forced recursive
