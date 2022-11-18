@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Binary to Hexa",
-            "content": "# Python code to convert from Binary to Hexadecimal using integer() and hexa() def binaryTohexa(n): # convert binary to int num = int(input(&quot;Enter a binary number&quot;), 2) # convert int to hexadecimal hexa_num = hex(num) print(&quot;Input:&quot;, num) return(hexa_num) # results print(&quot;Output:&quot;, (binaryTohexa(&#39;n&#39;))) . Input: 15 Output: 0xf .",
+            "content": "# Python code to convert from Binary to Hexadecimal using integer() and hexa() def binaryTohexa(n): # convert binary to int num = int(input(&quot;Enter a binary number&quot;), 2) # convert int to hexadecimal hexa_num = hex(num) print(&quot;Input:&quot;, num) return(hexa_num) # results print(&quot;Output:&quot;, (binaryTohexa(&#39;n&#39;))) . Input: 5461 Output: 0x1555 .",
             "url": "https://jishnus420.github.io/CSP-tri1/bhconverter",
             "relUrl": "/bhconverter",
             "date": " • Nov 17, 2022"
