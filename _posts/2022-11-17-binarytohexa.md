@@ -48,8 +48,8 @@ layout: notebook
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Input: 15
-Output: 0xf
+<pre>Input: 5461
+Output: 0x1555
 </pre>
 </div>
 </div>
