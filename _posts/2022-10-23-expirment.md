@@ -14,6 +14,49 @@ layout: notebook
 
 <div class="container" id="notebook-container">
         
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Python code to convert from Binary to Hexadecimal using integer() and hexa()</span>
+<span class="k">def</span> <span class="nf">binaryTohexa</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="c1"># convert binary to int</span>
+    <span class="n">num</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter a binary number&quot;</span><span class="p">),</span> <span class="mi">2</span><span class="p">)</span>
+      
+    <span class="c1"># convert int to hexadecimal</span>
+    <span class="n">hexa_num</span> <span class="o">=</span> <span class="nb">hex</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Input:&quot;</span><span class="p">,</span> <span class="n">num</span><span class="p">)</span>
+    <span class="k">return</span><span class="p">(</span><span class="n">hexa_num</span><span class="p">)</span>
+
+<span class="c1"># results</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Output:&quot;</span><span class="p">,</span> <span class="p">(</span><span class="n">binaryTohexa</span><span class="p">(</span><span class="s1">&#39;n&#39;</span><span class="p">)))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Input: 15
+Output: 0xf
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
 </div>
  
 
