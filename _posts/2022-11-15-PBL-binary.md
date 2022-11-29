@@ -157,4 +157,4 @@ type: pbl
         }
     }
 </script> 
-[Binary-to-Hexadecimal-Converter](https://jishnus420.github.io/CSP-tri1/2022/11/17/binarytohexa.html)
+[Binary-to-Hexadecimal-Converter](https://jishnus420.github.io/CSP-tri1/bhconverter)
