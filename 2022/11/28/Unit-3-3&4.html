@@ -318,8 +318,8 @@ window.onload = wrap_img;
 <span class="n">Adjective</span> <span class="o">=</span> <span class="s2">&quot;handsome&quot;</span> 
 <span class="n">Adjective2</span> <span class="o">=</span> <span class="s2">&quot;Very&quot;</span> 
 <span class="n">Verb</span> <span class="o">=</span> <span class="s2">&quot;is&quot;</span> 
-<span class="n">abrev</span> <span class="o">=</span> <span class="n">substr</span><span class="p">(</span><span class="n">Noun</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">7</span><span class="p">)</span> 
-<span class="n">yoda</span> <span class="o">=</span> <span class="n">concat</span><span class="p">(</span><span class="n">Adjective2</span><span class="p">,</span> <span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="n">Adjective</span><span class="p">,</span> <span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="n">abrev</span><span class="p">,</span> <span class="s2">&quot; &quot;</span><span class="p">,</span><span class="n">Verb</span><span class="p">,</span> <span class="s2">&quot;.&quot;</span><span class="p">)</span> 
+<span class="n">abrev</span> <span class="o">=</span> <span class="n">Noun</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">7</span><span class="p">]</span> 
+<span class="n">yoda</span> <span class="o">=</span> <span class="p">(</span><span class="n">Adjective2</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">Adjective</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">abrev</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">Verb</span> <span class="o">+</span> <span class="s2">&quot;.&quot;</span><span class="p">)</span> 
 <span class="nb">print</span><span class="p">(</span><span class="n">yoda</span><span class="p">)</span>
 
 <span class="c1"># Prediction: Very handsome Mr.Mort is</span>
@@ -334,18 +334,47 @@ window.onload = wrap_img;
 
 <div class="output_area">
 
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold">/home/jishnus/vscode/CSP-tri1/_notebooks/2022-11-28-Unit-3-3&amp;4.ipynb Cell 6</span> in <span class="ansi-cyan-fg">&lt;cell line: 5&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/jishnus/vscode/CSP-tri1/_notebooks/2022-11-28-Unit-3-3%264.ipynb#X11sdnNjb2RlLXJlbW90ZQ%3D%3D?line=2&#39;&gt;3&lt;/a&gt;</span> Adjective2 = &#34;Very&#34; 
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/jishnus/vscode/CSP-tri1/_notebooks/2022-11-28-Unit-3-3%264.ipynb#X11sdnNjb2RlLXJlbW90ZQ%3D%3D?line=3&#39;&gt;4&lt;/a&gt;</span> Verb = &#34;is&#34; 
-<span class="ansi-green-fg">----&gt; &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/jishnus/vscode/CSP-tri1/_notebooks/2022-11-28-Unit-3-3%264.ipynb#X11sdnNjb2RlLXJlbW90ZQ%3D%3D?line=4&#39;&gt;5&lt;/a&gt;</span> abrev = substring(Noun, 1, 7) 
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/jishnus/vscode/CSP-tri1/_notebooks/2022-11-28-Unit-3-3%264.ipynb#X11sdnNjb2RlLXJlbW90ZQ%3D%3D?line=5&#39;&gt;6&lt;/a&gt;</span> yoda = concat(Adjective2, &#34; &#34;, Adjective, &#34; &#34;, abrev, &#34; &#34;,Verb, &#34;.&#34;) 
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/jishnus/vscode/CSP-tri1/_notebooks/2022-11-28-Unit-3-3%264.ipynb#X11sdnNjb2RlLXJlbW90ZQ%3D%3D?line=6&#39;&gt;7&lt;/a&gt;</span> print(yoda)
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Very handsome Mr.Mort is.
+</pre>
+</div>
+</div>
 
-<span class="ansi-red-fg">NameError</span>: name &#39;substring&#39; is not defined</pre>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">cookie</span> <span class="o">=</span> <span class="s2">&quot;chocolate&quot;</span> 
+<span class="n">cookie2</span> <span class="o">=</span> <span class="s2">&quot;rasin&quot;</span> 
+<span class="n">len1</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">cookie</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span> 
+<span class="n">len2</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">cookie2</span><span class="p">)</span> <span class="o">*</span> <span class="mi">45</span> 
+<span class="n">vote1</span> <span class="o">=</span> <span class="p">(</span><span class="n">cookie</span> <span class="o">+</span> <span class="s2">&quot; cookie votes: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">len1</span><span class="p">))</span> <span class="c1"># creating a string for choco cookie</span>
+<span class="n">vote2</span> <span class="o">=</span> <span class="p">(</span><span class="n">cookie2</span> <span class="o">+</span> <span class="s2">&quot; cookie votes: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">len2</span><span class="p">))</span> <span class="c1"># creating a string for rasin cookie</span>
+<span class="n">votes</span> <span class="o">=</span> <span class="p">(</span><span class="n">vote1</span> <span class="o">+</span> <span class="s2">&quot;           &quot;</span> <span class="o">+</span> <span class="n">vote2</span><span class="p">)</span> <span class="c1"># displaying votes for them </span>
+<span class="nb">print</span><span class="p">(</span><span class="n">votes</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>chocolate cookie votes: 4.5           rasin cookie votes: 225
+</pre>
 </div>
 </div>
 
