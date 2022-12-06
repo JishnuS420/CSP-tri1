@@ -19,4 +19,11 @@ title: Table
         <td><a href="url">Lesson #3 - Unit 3.5-7, Grade - TBD</a></td>
         <td>1.95</td>
     </tr>
+    <tr>
+        <td>Week 15</td>
+        <td><a href="url">Lesson #4 - Unit 3.8 and 3.10 , Grade - TBD/1</a></td>
+        <td><a href="url">Lesson #5 - Unit 3.9 and 3.11 , Grade - TBD/1</a></td>
+        <td><a href="url">Lesson #6 - Unit 3.5-7, Grade - TBD/1</a></td>
+        <td>TBD</td>
+    </tr>
 </table>
