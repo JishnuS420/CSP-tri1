@@ -4,7 +4,7 @@ description: Developing and Writing Procedures Lesson
 title: Unit 3 Sections 12-13
 toc: true
 badges: false
-categories: [lessons]
+categories: [collegeboard]
 nb_path: _notebooks/2022-12-07-developing-procedures.ipynb
 layout: notebook
 ---
@@ -72,8 +72,8 @@ layout: notebook
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>90F
-32.22222222222222
+<pre>86F
+30.0
 </pre>
 </div>
 </div>
@@ -217,14 +217,114 @@ MOVE_FORWARD()</p>
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">procedure</span><span class="p">()</span>
-    <span class="c1"># code goes here</span>
-    <span class="k">return</span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">procedure</span><span class="p">():</span>
+  <span class="n">homework_list</span> <span class="o">=</span> <span class="p">[]</span> <span class="c1"># list to store the homework assignments</span>
 
-<span class="c1"># code goes here</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Enter your homework assignments for the week:&quot;</span><span class="p">)</span>
+  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">7</span><span class="p">):</span>
+    <span class="n">homework</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Day &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;: &quot;</span><span class="p">)</span> <span class="c1"># input for the homework you want</span>
+    <span class="n">homework_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">homework</span><span class="p">)</span> <span class="c1"># adds the homework to end of the list </span>
+
+  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Here is your homework for this week!&quot;</span><span class="p">)</span>
+  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">7</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Day &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;: &quot;</span> <span class="o">+</span> <span class="n">homework_list</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="c1"># prints HW according to order inputted</span>
+  <span class="k">return</span>
+<span class="n">procedure</span><span class="p">()</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Enter your homework assignments for the week:
+Here is your homework for this week!
+Day 0: CSP 
+Day 1: MATH
+Day 2: ENGLISH
+Day 3: PHYSICS
+Day 4: BIOLOGY
+Day 5: COMPUTER ANIMATION
+Day 6: NONE
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">add_notecard</span><span class="p">(</span><span class="n">topic</span><span class="p">,</span> <span class="n">note</span><span class="p">):</span> <span class="c1"># adding a note card</span>
+    <span class="n">notecards</span><span class="p">[</span><span class="n">topic</span><span class="p">]</span> <span class="o">=</span> <span class="n">note</span>
+
+<span class="k">def</span> <span class="nf">get_notecard</span><span class="p">(</span><span class="n">topic</span><span class="p">):</span> <span class="c1"># recalling a note card</span>
+    <span class="k">return</span> <span class="n">notecards</span><span class="p">[</span><span class="n">topic</span><span class="p">]</span>
+
+<span class="k">def</span> <span class="nf">rmv_notecard</span><span class="p">(</span><span class="n">topic</span><span class="p">):</span> <span class="c1"># removing a note card</span>
+    <span class="k">del</span> <span class="n">notecards</span><span class="p">[</span><span class="n">topic</span><span class="p">]</span>
+
+<span class="n">notecards</span> <span class="o">=</span> <span class="p">{}</span>
+
+<span class="n">add_notecard</span><span class="p">(</span><span class="s2">&quot;Math Vocab&quot;</span><span class="p">,</span> <span class="s2">&quot;Absolute Maximum - The highest point of a function&quot;</span><span class="p">)</span>
+<span class="n">add_notecard</span><span class="p">(</span><span class="s2">&quot;Physics Formulas&quot;</span><span class="p">,</span> <span class="s2">&quot;Work = |Force| x |Displacement| x cos(angle)&quot;</span><span class="p">)</span>
+
+<span class="n">physics_formulas</span> <span class="o">=</span> <span class="n">get_notecard</span><span class="p">(</span><span class="s2">&quot;Physics Formulas&quot;</span><span class="p">)</span>
+<span class="n">math_vocab</span> <span class="o">=</span> <span class="n">get_notecard</span><span class="p">(</span><span class="s2">&quot;Math Vocab&quot;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Physics Formulas:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">physics_formulas</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Math Vocab:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">math_vocab</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Now lets try removing a notecard!</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="n">math_vocab</span> <span class="o">=</span> <span class="n">rmv_notecard</span><span class="p">(</span><span class="s2">&quot;Math Vocab&quot;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Physics Formulas:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">physics_formulas</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Math Vocab:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">math_vocab</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Physics Formulas:
+Work = |Force| x |Displacement| x cos(angle)
+Math Vocab:
+Absolute Maximum - The highest point of a function
+
+Now lets try removing a notecard!
+
+Physics Formulas:
+Work = |Force| x |Displacement| x cos(angle)
+Math Vocab:
+None
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
