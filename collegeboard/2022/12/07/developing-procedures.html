@@ -10,15 +10,15 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Developing and Writing Procedures Lesson" />
 <meta property="og:description" content="Developing and Writing Procedures Lesson" />
-<link rel="canonical" href="https://jishnus420.github.io/CSP-tri1/lessons/2022/12/07/developing-procedures.html" />
-<meta property="og:url" content="https://jishnus420.github.io/CSP-tri1/lessons/2022/12/07/developing-procedures.html" />
+<link rel="canonical" href="https://jishnus420.github.io/CSP-tri1/collegeboard/2022/12/07/developing-procedures.html" />
+<meta property="og:url" content="https://jishnus420.github.io/CSP-tri1/collegeboard/2022/12/07/developing-procedures.html" />
 <meta property="og:site_name" content="Jishnu Singiresu" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2022-12-07T00:00:00-06:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Unit 3 Sections 12-13" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-12-07T00:00:00-06:00","datePublished":"2022-12-07T00:00:00-06:00","description":"Developing and Writing Procedures Lesson","headline":"Unit 3 Sections 12-13","mainEntityOfPage":{"@type":"WebPage","@id":"https://jishnus420.github.io/CSP-tri1/lessons/2022/12/07/developing-procedures.html"},"url":"https://jishnus420.github.io/CSP-tri1/lessons/2022/12/07/developing-procedures.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-12-07T00:00:00-06:00","datePublished":"2022-12-07T00:00:00-06:00","description":"Developing and Writing Procedures Lesson","headline":"Unit 3 Sections 12-13","mainEntityOfPage":{"@type":"WebPage","@id":"https://jishnus420.github.io/CSP-tri1/collegeboard/2022/12/07/developing-procedures.html"},"url":"https://jishnus420.github.io/CSP-tri1/collegeboard/2022/12/07/developing-procedures.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/CSP-tri1/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://jishnus420.github.io/CSP-tri1/feed.xml" title="Jishnu Singiresu" /><link rel="shortcut icon" type="image/x-icon" href="/CSP-tri1/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -79,14 +79,14 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      3 min read
+      5 min read
     
 </span></p>
 
     
       <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
       
-        <a class="category-tags-link" href="/CSP-tri1/categories/#lessons">lessons</a>
+        <a class="category-tags-link" href="/CSP-tri1/categories/#collegeboard">collegeboard</a>
         
       
       </p>
@@ -169,8 +169,8 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>90F
-32.22222222222222
+<pre>86F
+30.0
 </pre>
 </div>
 </div>
@@ -331,14 +331,114 @@ MOVE_FORWARD()</p>
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">procedure</span><span class="p">()</span>
-    <span class="c1"># code goes here</span>
-    <span class="k">return</span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">procedure</span><span class="p">():</span>
+  <span class="n">homework_list</span> <span class="o">=</span> <span class="p">[]</span> <span class="c1"># list to store the homework assignments</span>
 
-<span class="c1"># code goes here</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">"Enter your homework assignments for the week:"</span><span class="p">)</span>
+  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">7</span><span class="p">):</span>
+    <span class="n">homework</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Day "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">+</span> <span class="s2">": "</span><span class="p">)</span> <span class="c1"># input for the homework you want</span>
+    <span class="n">homework_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">homework</span><span class="p">)</span> <span class="c1"># adds the homework to end of the list </span>
+
+  <span class="nb">print</span><span class="p">(</span><span class="s2">"Here is your homework for this week!"</span><span class="p">)</span>
+  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">7</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Day "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">+</span> <span class="s2">": "</span> <span class="o">+</span> <span class="n">homework_list</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="c1"># prints HW according to order inputted</span>
+  <span class="k">return</span>
+<span class="n">procedure</span><span class="p">()</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Enter your homework assignments for the week:
+Here is your homework for this week!
+Day 0: CSP 
+Day 1: MATH
+Day 2: ENGLISH
+Day 3: PHYSICS
+Day 4: BIOLOGY
+Day 5: COMPUTER ANIMATION
+Day 6: NONE
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">add_notecard</span><span class="p">(</span><span class="n">topic</span><span class="p">,</span> <span class="n">note</span><span class="p">):</span> <span class="c1"># adding a note card</span>
+    <span class="n">notecards</span><span class="p">[</span><span class="n">topic</span><span class="p">]</span> <span class="o">=</span> <span class="n">note</span>
+
+<span class="k">def</span> <span class="nf">get_notecard</span><span class="p">(</span><span class="n">topic</span><span class="p">):</span> <span class="c1"># recalling a note card</span>
+    <span class="k">return</span> <span class="n">notecards</span><span class="p">[</span><span class="n">topic</span><span class="p">]</span>
+
+<span class="k">def</span> <span class="nf">rmv_notecard</span><span class="p">(</span><span class="n">topic</span><span class="p">):</span> <span class="c1"># removing a note card</span>
+    <span class="k">del</span> <span class="n">notecards</span><span class="p">[</span><span class="n">topic</span><span class="p">]</span>
+
+<span class="n">notecards</span> <span class="o">=</span> <span class="p">{}</span>
+
+<span class="n">add_notecard</span><span class="p">(</span><span class="s2">"Math Vocab"</span><span class="p">,</span> <span class="s2">"Absolute Maximum - The highest point of a function"</span><span class="p">)</span>
+<span class="n">add_notecard</span><span class="p">(</span><span class="s2">"Physics Formulas"</span><span class="p">,</span> <span class="s2">"Work = |Force| x |Displacement| x cos(angle)"</span><span class="p">)</span>
+
+<span class="n">physics_formulas</span> <span class="o">=</span> <span class="n">get_notecard</span><span class="p">(</span><span class="s2">"Physics Formulas"</span><span class="p">)</span>
+<span class="n">math_vocab</span> <span class="o">=</span> <span class="n">get_notecard</span><span class="p">(</span><span class="s2">"Math Vocab"</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Physics Formulas:"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">physics_formulas</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Math Vocab:"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">math_vocab</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Now lets try removing a notecard!</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+
+<span class="n">math_vocab</span> <span class="o">=</span> <span class="n">rmv_notecard</span><span class="p">(</span><span class="s2">"Math Vocab"</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Physics Formulas:"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">physics_formulas</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Math Vocab:"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">math_vocab</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Physics Formulas:
+Work = |Force| x |Displacement| x cos(angle)
+Math Vocab:
+Absolute Maximum - The highest point of a function
+
+Now lets try removing a notecard!
+
+Physics Formulas:
+Work = |Force| x |Displacement| x cos(angle)
+Math Vocab:
+None
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -349,7 +449,7 @@ MOVE_FORWARD()</p>
 
 
 
-  </div><a class="u-url" href="/CSP-tri1/lessons/2022/12/07/developing-procedures.html" hidden></a>
+  </div><a class="u-url" href="/CSP-tri1/collegeboard/2022/12/07/developing-procedures.html" hidden></a>
 </article>
 
       </div>
