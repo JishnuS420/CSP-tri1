@@ -30,6 +30,7 @@ title: Table
         <td>Week 15</td>
         <td><a href="https://github.com/JishnuS420/CSP-tri1/issues/18#issue-1495484516">Lesson #7 - Unit 3.14 and 3.15 , Grade - 0.9/1</a></td>
         <td><a href="TBD">Lesson #8 - Unit 3.16 , Grade - TBD/1</a></td>
+        <td><a href="https://mmaxwu.github.io/Tri2-GroupFastpages/lesson">Lesson #9 - Unit 3.17 and 3.18 , Taught by my group</a></td>
         <td>TBD</td>
     </tr>
 </table>
