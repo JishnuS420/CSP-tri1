@@ -34,4 +34,4 @@ title: Table
         <td>TBD</td>  
     </tr>
 </table>
-<a href="https://jishnus420.github.io/CSP-tri1/unit2&3"> Vocab </a>
+<a href="https://jishnus420.github.io/CSP-tri1/unit2&3"> Unit 2 and 3 Vocab </a>
