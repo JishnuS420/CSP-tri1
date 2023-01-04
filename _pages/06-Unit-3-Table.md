@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /table/
-title: Table
+title: Unit 3 Lessons Table
 ---
 <table>
     <table>
