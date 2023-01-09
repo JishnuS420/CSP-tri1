@@ -19,7 +19,7 @@ permalink: /ScoringCPT1
 
 # Student 2 Submission:
 |Category|Personal Grading Score|Collegeboard's Score|Comments|Reflection|
-|---|---|---|---|---|
+|:---:|:---:|:---:|:---:|:---:|
 |Program Purpose and Function|1|1|The video was clear and the code was visibly functional and the writing part clearly describes the input and the wanted output. Seems to have a clear purpose. It meets all the requirements mentioned by collegeboard in my opinion|The code met all the criteria, and is a pretty code example of the first category|
 |Data Abstraction|1|1|Everything is shown and is in the project although in the form of blocks, the explanations and comments make sense and explain the code well|Same as the comment I left, remember to include comments in code and other parts for my own CPT|
 |Managing Complexity|1|1|Everything in here is met and are often even repeated to secure the point even further, everything was yet again well described | Same as the comment, good example of a good Managing Complexity|
