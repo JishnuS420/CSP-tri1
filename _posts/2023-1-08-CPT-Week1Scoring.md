@@ -25,5 +25,5 @@ permalink: /ScoringCPT1
 |Managing Complexity|1|1|Everything in here is met and are often even repeated to secure the point even further, everything was yet again well described | Same as the comment, good example of a good Managing Complexity|
 |Procedural Abstraction|1|1|All the requirements were met and are explained/shown well|Same as the comment, nothing too special but met all the criteria in the rubric and was good|
 |Algorithm Implementation|1|1|The code segment shows sequencing, selection, and iteration with the for loop and also meets all the other requirements that were listed in the rubric|Agree with the comment|
-|Testing|1|1|Everything is described well and organized. | The code really shows organization and is easy to understand and follow|
+|Testing|1|1|Everything is described well and organized.| The code really shows organization and is easy to understand and follow|
 |Final Score|6/6|6/6|N/A|I graded the same as collegeboard, but I also learnt a lot of things from this persons submission, the amount of comments and the organizations and explanations all make the video really easy to follow along with and the. This person was very organized and it shows their interest in the CPT and it also shows how they weren't just doing it to do it but put in a lot of thoughts and work into making this work.|
