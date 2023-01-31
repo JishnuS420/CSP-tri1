@@ -1,4 +1,13 @@
-# Collegeboard MC 2 Corrections and Reflections
+---
+toc: true
+layout: post
+description: Collegeboard MC 2 Corrections and Reflections
+categories: [markdown, Week 20, collegeboard]
+title: Collegeboard MC 2 Corrections and Reflections
+author: Jishnu Singiresu
+show_tags: true
+comments: true
+---
 # Final Score 
 ![]({{site.baseurl}}/images/fs.png)
 ## Question 11

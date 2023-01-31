@@ -1,3 +1,13 @@
+---
+toc: true
+layout: post
+description: 5.1 and 5.2 Notes and Reflection
+categories: [markdown, Week 20, collegeboard]
+title: 5.1 and 5.2 Notes and Reflection
+author: Jishnu Singiresu
+show_tags: true
+comments: true
+---
 # 5.1 Notes
 - A Disrupter is something that changes the way 
 - No critical thinking exists when using ChatCPT

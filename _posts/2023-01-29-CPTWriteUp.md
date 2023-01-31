@@ -1,3 +1,13 @@
+---
+toc: true
+layout: post
+description: Project Practice WriteUp
+categories: [markdown, Week 20, collegeboard]
+title: Individual CPT WriteUp
+author: Jishnu Singiresu
+show_tags: true
+comments: true
+---
 # Category 1: Purpose and Function
 Our purpose is to provide users with a fun and interactive experience in which they can alleviate their boredom.
 # Category 2: Data Abstraction
