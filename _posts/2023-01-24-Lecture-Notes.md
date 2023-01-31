@@ -20,7 +20,7 @@ Internet blocker can be a good thing, they often protect students and others fro
 - Some people are unable to afford or unable to access due to state of life
 - Country regulations, Religious reasons, refuses to use technology 
 # 5.2 Reflection
-In a largely digital world like ours, a digital divide would mean that and unequal access to technology and knowledge would be present. This would affect things like jobs oppurtunities and education, causing a higher level of disparity between people with access and those without. Also with a large majority of mass communication and just normal day to day communication being done digitally, people would be unable to particpate in society equally, leading to some opinions not being heard and would result in a large bias.
+In a largely digital world like ours, a digital divide would mean that and unequal access to technology and knowledge would be present. This would affect things like jobs opportunities and education, causing a higher level of disparity between people with access and those without. Also with a large majority of mass communication and just normal day to day communication being done digitally, people would be unable to particpate in society equally, leading to some opinions not being heard and would result in a large bias.
 
 
 
