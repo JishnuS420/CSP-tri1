@@ -10,17 +10,15 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Using Programs with Data is focused on SQL and database actions. Part B focuses on learning SQL commands, connections, and curses using an Imperative programming style," />
 <meta property="og:description" content="Using Programs with Data is focused on SQL and database actions. Part B focuses on learning SQL commands, connections, and curses using an Imperative programming style," />
-<link rel="canonical" href="https://jishnus420.github.io/CSP-tri1/2023/03/16/AP-unit2-4b.html" />
-<meta property="og:url" content="https://jishnus420.github.io/CSP-tri1/2023/03/16/AP-unit2-4b.html" />
+<link rel="canonical" href="https://jishnus420.github.io/CSP-tri1/week26/2023/03/16/AP-unit2-4b.html" />
+<meta property="og:url" content="https://jishnus420.github.io/CSP-tri1/week26/2023/03/16/AP-unit2-4b.html" />
 <meta property="og:site_name" content="Jishnu Singiresu" />
-<meta property="og:image" content="https://jishnus420.github.io/CSP-tri1/images/python.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2023-03-16T00:00:00-05:00" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://jishnus420.github.io/CSP-tri1/images/python.png" />
+<meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Unit 2.4b Using Programs with Data, SQL" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-03-16T00:00:00-05:00","datePublished":"2023-03-16T00:00:00-05:00","description":"Using Programs with Data is focused on SQL and database actions. Part B focuses on learning SQL commands, connections, and curses using an Imperative programming style,","headline":"Unit 2.4b Using Programs with Data, SQL","image":"https://jishnus420.github.io/CSP-tri1/images/python.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://jishnus420.github.io/CSP-tri1/2023/03/16/AP-unit2-4b.html"},"url":"https://jishnus420.github.io/CSP-tri1/2023/03/16/AP-unit2-4b.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-03-16T00:00:00-05:00","datePublished":"2023-03-16T00:00:00-05:00","description":"Using Programs with Data is focused on SQL and database actions. Part B focuses on learning SQL commands, connections, and curses using an Imperative programming style,","headline":"Unit 2.4b Using Programs with Data, SQL","mainEntityOfPage":{"@type":"WebPage","@id":"https://jishnus420.github.io/CSP-tri1/week26/2023/03/16/AP-unit2-4b.html"},"url":"https://jishnus420.github.io/CSP-tri1/week26/2023/03/16/AP-unit2-4b.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/CSP-tri1/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://jishnus420.github.io/CSP-tri1/feed.xml" title="Jishnu Singiresu" /><link rel="shortcut icon" type="image/x-icon" href="/CSP-tri1/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -81,10 +79,17 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      5 min read
+      7 min read
     
 </span></p>
 
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/CSP-tri1/categories/#week26">week26</a>
+        
+      
+      </p>
     
 
     
@@ -166,11 +171,19 @@ window.onload = wrap_img;
 <p>Uses PRAGMA statement to read schema.</p>
 </blockquote>
 <p>Describe Schema, here is resource <a href="https://www.sqlite.org/index.html">Resource</a>- What is a database schema?</p>
+<p>Its kind of like the skelton of the database, essentially, how its formatted</p>
 <ul>
 <li>What is the purpose of identity Column in SQL database?</li>
+</ul>
+<p>The identity Column in SQL database is in order to aid in identifying different profiles so its easier to differentiate them</p>
+<ul>
 <li>What is the purpose of a primary key in SQL database?</li>
+</ul>
+<p>The primary key makes each of the data collected unique preventing any confusions</p>
+<ul>
 <li>What are the Data Types in SQL table?</li>
 </ul>
+<p>The data types in SQL table is Numbers, Dates, Time, and Stings (Binary, Character, and e.t.c), and e.t.c.</p>
 
 </div>
 </div>
@@ -195,6 +208,7 @@ window.onload = wrap_img;
     <span class="n">cursor</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
     
     <span class="c1"># Fetch results of Schema</span>
+    <span class="c1"># The PRAGMA table_info command prints out the stuff</span>
     <span class="n">results</span> <span class="o">=</span> <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">"PRAGMA table_info('users')"</span><span class="p">)</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
 
     <span class="c1"># Print the results</span>
@@ -203,8 +217,6 @@ window.onload = wrap_img;
 
     <span class="c1"># Close the database connection</span>
     <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-    
-<span class="n">schema</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -225,10 +237,20 @@ window.onload = wrap_img;
 </blockquote>
 <ul>
 <li>What is a connection object?  After you google it, what do you think it does?</li>
+</ul>
+<p>A connection object is an representation of the database and is responsible for connecting to the database in order to modify it using CRUD</p>
+<ul>
 <li>Same for cursor object?</li>
+</ul>
+<p>Yes, cursor enables us to use the commands while fetching the data</p>
+<ul>
 <li>Look at conn object and cursor object in VSCode debugger.  What attributes are in the object?</li>
+</ul>
+<p>special variables, function variables, class variables, in_transaction, isolation_level, row_factory, and total_changes</p>
+<ul>
 <li>Is "results" an object?  How do you know?</li>
 </ul>
+<p>Yes, since when we debug it, we can see the same thing that we saw for the conn and cursor objects although they are slightly different but we can safely assume that they are the same.</p>
 
 </div>
 </div>
@@ -270,6 +292,28 @@ window.onload = wrap_img;
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>(1, 'Thomas Edison', 'toby', 'sha256$JTYqbSexJYwDOahq$0df573ee8f81353193eaad0cff63422451dcb68d95675aaa8f9e360bee0a5d3f', '1847-02-11')
+(2, 'Nikola Tesla', 'niko', 'sha256$y2Lw2RY86Tlgp3Wz$c755a658b019f030cec737acb5f12fc2418ea76ff4fdc38579fbf18dd25ea4b9', '2023-03-15')
+(3, 'Alexander Graham Bell', 'lex', 'sha256$KV8xnONuMm7n70wo$9e028038fb8a1b3ac8853c3abefd06cdd3ff3aa94a9003cd72fd35c44252661e', '2023-03-15')
+(4, 'Eli Whitney', 'whit', 'sha256$3YbpgyrllbJ05lPC$8245ec17d89132906aa86cdd7fa96c00f117c4b3343848f56d5dd41d1a0eaf37', '2023-03-15')
+(5, 'Indiana Jones', 'indi', 'sha256$Wk2d0WpXW1I3VtQV$2dc69e08b246f0c3590b1afda36853126f1d1847eee0952d9412c61f307735e9', '1920-10-21')
+(6, 'Marion Ravenwood', 'raven', 'sha256$J72EMWRDjls4M0NP$666f722144b54b5e565dd22db82ab54ba0d2ac6e1a56ac42fdcb73c34487efe6', '1921-10-21')
+(7, '', '', 'sha256$RhkRZdNEKTAAEK6v$bec6de0e177fc0379880dbc2839b17d05805cfbe3bf0158c5f4c9417ba93778c', '2023-03-15')
+(8, 'Jishnu Singiresu', '10', 'hdiewfhk2g', '2006-04-20')
+(9, 'Joe', '15', 'hjweigwyghbabh', '2008-02-20')
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -283,9 +327,14 @@ window.onload = wrap_img;
 <p>Uses SQL INSERT to add row</p>
 <ul>
 <li>Compore create() in both SQL lessons.  What is better or worse in the two implementations?</li>
-<li>Explain purpose of SQL INSERT.   Is this the same as User <strong>init</strong>?</li>
 </ul>
 </blockquote>
+<p>Imperative:Has less code and is easier to work with than OOPOOP: Has slightly more code and is somewhat harder to work with</p>
+<p>Both have their ups and downs but I feel that Imperative makes the most sense but OOP in the end is definetly much more organized and can account for a wide variety of variable and values</p>
+<ul>
+<li>Explain purpose of SQL INSERT.   Is this the same as User <strong>init</strong>?</li>
+</ul>
+<p>SQL INSERT puts the profile into the table and its essentially the same thing as <strong>init</strong></p>
 
 </div>
 </div>
@@ -327,10 +376,24 @@ window.onload = wrap_img;
     <span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     
-<span class="c1">#create()</span>
+<span class="n">create</span><span class="p">()</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Error while executing the INSERT: UNIQUE constraint failed: users._uid
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -347,10 +410,17 @@ window.onload = wrap_img;
 <p>Uses SQL UPDATE to modify password</p>
 <ul>
 <li>What does the hacked part do?</li>
-<li>Explain try/except, when would except occur?</li>
-<li>What code seems to be repeated in each of these examples to point, why is it repeated?</li>
 </ul>
 </blockquote>
+<p>The hacked part recognizes if the passwor is the same and updates the password to be different</p>
+<ul>
+<li>Explain try/except, when would except occur?</li>
+</ul>
+<p>Try makes it so that the if and else statement is executed and attempt to find the uid, if there is an error, then the except statement is run and it returns and error msg</p>
+<ul>
+<li>What code seems to be repeated in each of these examples to point, why is it repeated?</li>
+</ul>
+<p>The connect and cursor codes seem to repeated since the code needs to co0nstantly set up new objects for these functions and the objects need to close so that the code can end or else it would just keep going on.</p>
 
 </div>
 </div>
@@ -396,10 +466,24 @@ window.onload = wrap_img;
     <span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     
-<span class="c1">#update()</span>
+<span class="n">update</span><span class="p">()</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>The row with user id  the password has been hacked
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -519,6 +603,20 @@ window.onload = wrap_img;
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>A new user record 18 has been created
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -531,12 +629,22 @@ window.onload = wrap_img;
 <ul>
 <li>Add this Blog to you own Blogging site.  In the Blog add notes and observations on each code cell.</li>
 <li>In this implementation, do you see procedural abstraction?</li>
+</ul>
+<p>Procedural Abstraction is in fact taking place inside this implementation since CRUD is being performed in this implementation across different places in the program</p>
+<ul>
 <li>In 2.4a or 2.4b lecture<ul>
 <li>Do you see data abstraction?  Complement this with Debugging example.</li>
-<li>Use Imperative or OOP style to Create a new Table or do something that applies to your CPT project.</li>
 </ul>
 </li>
 </ul>
+<p>Yes, data abstraction is seen when we read the data from the database. We see the data being represented through the SQLite table as well and we use dictionaries also.</p>
+
+<pre><code>- Use Imperative or OOP style to Create a new Table or do something that applies to your CPT project.
+
+
+
+
+</code></pre>
 <p>Reference... <a href="https://www.sqlitetutorial.net/sqlite-python/creating-tables/">sqlite documentation</a></p>
 
 </div>
@@ -546,7 +654,7 @@ window.onload = wrap_img;
 
 
 
-  </div><a class="u-url" href="/CSP-tri1/2023/03/16/AP-unit2-4b.html" hidden></a>
+  </div><a class="u-url" href="/CSP-tri1/week26/2023/03/16/AP-unit2-4b.html" hidden></a>
 </article>
 
       </div>
