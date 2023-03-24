@@ -666,7 +666,7 @@ window.onload = wrap_img;
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Created
- {'id': 6, 'name': 'Jishnu', 'college': 'Harvard', 'GPA': '4.1', 'SAT': '1500', 'ACT': '34', 'gradDate': '06-07-2024'}
+ {'id': 6, 'name': 'Jishnu', 'college': 'Harvard', 'GPA': '3.9', 'SAT': '1600', 'ACT': '30', 'gradDate': '04-20-2023'}
 </pre>
 </div>
 </div>
@@ -714,7 +714,6 @@ window.onload = wrap_img;
         <span class="n">table</span> <span class="o">=</span> <span class="n">Student</span><span class="o">.</span><span class="n">query</span><span class="o">.</span><span class="n">all</span><span class="p">()</span>
     <span class="n">json_ready</span> <span class="o">=</span> <span class="p">[</span><span class="n">user</span><span class="o">.</span><span class="n">make_dict</span><span class="p">()</span> <span class="k">for</span> <span class="n">user</span> <span class="ow">in</span> <span class="n">table</span><span class="p">]</span> <span class="c1"># "List Comprehensions", for each user add user.read() to list</span>
     <span class="k">return</span> <span class="n">json_ready</span>
-
 <span class="n">read</span><span class="p">()</span>
 </pre></div>
 
@@ -768,10 +767,10 @@ window.onload = wrap_img;
  {'id': 6,
   'name': 'Jishnu',
   'college': 'Harvard',
-  'GPA': '4.1',
-  'SAT': '1500',
-  'ACT': '34',
-  'gradDate': '06-07-2024'}]</pre>
+  'GPA': '3.9',
+  'SAT': '1600',
+  'ACT': '30',
+  'gradDate': '04-20-2023'}]</pre>
 </div>
 
 </div>
@@ -867,7 +866,7 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Updated: {'id': 3, 'name': 'Joe', 'college': 'UCLA', 'GPA': '1.8', 'SAT': '500', 'ACT': '17', 'gradDate': '03-29-2024'}
+<pre> not found
 </pre>
 </div>
 </div>
@@ -921,18 +920,26 @@ window.onload = wrap_img;
 
 <div class="output_area">
 
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Profile #3 deleted
-</pre>
-</div>
-</div>
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">ValueError</span>                                Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">/home/jishnus/vscode/CSP-tri1/_notebooks/2023-03-13-AP-unit2-4a.ipynb Cell 19</span> in <span class="ansi-cyan-fg">&lt;cell line: 16&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/jishnus/vscode/CSP-tri1/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X24sdnNjb2RlLXJlbW90ZQ%3D%3D?line=11'&gt;12&lt;/a&gt;</span>         else:
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/jishnus/vscode/CSP-tri1/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X24sdnNjb2RlLXJlbW90ZQ%3D%3D?line=12'&gt;13&lt;/a&gt;</span>             # Error message if delete fails
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/jishnus/vscode/CSP-tri1/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X24sdnNjb2RlLXJlbW90ZQ%3D%3D?line=13'&gt;14&lt;/a&gt;</span>             print(f"Profile #{getID} not found")
+<span class="ansi-green-fg">---&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/jishnus/vscode/CSP-tri1/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X24sdnNjb2RlLXJlbW90ZQ%3D%3D?line=15'&gt;16&lt;/a&gt;</span> delete()
 
-<div class="output_area">
+<span class="ansi-green-intense-fg ansi-bold">/home/jishnus/vscode/CSP-tri1/_notebooks/2023-03-13-AP-unit2-4a.ipynb Cell 19</span> in <span class="ansi-cyan-fg">delete</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/jishnus/vscode/CSP-tri1/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X24sdnNjb2RlLXJlbW90ZQ%3D%3D?line=0'&gt;1&lt;/a&gt;</span> def delete():
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/jishnus/vscode/CSP-tri1/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X24sdnNjb2RlLXJlbW90ZQ%3D%3D?line=1'&gt;2&lt;/a&gt;</span> 
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/jishnus/vscode/CSP-tri1/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X24sdnNjb2RlLXJlbW90ZQ%3D%3D?line=2'&gt;3&lt;/a&gt;</span>     # Gets the ID
+<span class="ansi-green-fg">----&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/jishnus/vscode/CSP-tri1/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X24sdnNjb2RlLXJlbW90ZQ%3D%3D?line=3'&gt;4&lt;/a&gt;</span>     getID = int(input("Enter the ID of the profile:"))
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/jishnus/vscode/CSP-tri1/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X24sdnNjb2RlLXJlbW90ZQ%3D%3D?line=4'&gt;5&lt;/a&gt;</span>     with app.app_context():
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/jishnus/vscode/CSP-tri1/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X24sdnNjb2RlLXJlbW90ZQ%3D%3D?line=5'&gt;6&lt;/a&gt;</span>         # Gets the user through the ID
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/jishnus/vscode/CSP-tri1/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X24sdnNjb2RlLXJlbW90ZQ%3D%3D?line=6'&gt;7&lt;/a&gt;</span>         profileDelete = Student.query.get(getID)
 
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>/tmp/ipykernel_765/78855563.py:7: LegacyAPIWarning: The Query.get() method is considered legacy as of the 1.x series of SQLAlchemy and becomes a legacy construct in 2.0. The method is now available as Session.get() (deprecated since: 2.0) (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
-  profileDelete = Student.query.get(getID)
-</pre>
+<span class="ansi-red-fg">ValueError</span>: invalid literal for int() with base 10: ''</pre>
 </div>
 </div>
 
