@@ -13,14 +13,12 @@
 <link rel="canonical" href="https://jishnus420.github.io/CSP-tri1/2023/03/29/DS-hashmaps.html" />
 <meta property="og:url" content="https://jishnus420.github.io/CSP-tri1/2023/03/29/DS-hashmaps.html" />
 <meta property="og:site_name" content="Jishnu Singiresu" />
-<meta property="og:image" content="https://jishnus420.github.io/CSP-tri1/images/python.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2023-03-29T00:00:00-05:00" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://jishnus420.github.io/CSP-tri1/images/python.png" />
+<meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Data Structures- Hashmaps, Sets, Hash Tables, Hashing and Collisions" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-03-29T00:00:00-05:00","datePublished":"2023-03-29T00:00:00-05:00","description":"Observing hashmaps with python dictionaries","headline":"Data Structures- Hashmaps, Sets, Hash Tables, Hashing and Collisions","image":"https://jishnus420.github.io/CSP-tri1/images/python.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://jishnus420.github.io/CSP-tri1/2023/03/29/DS-hashmaps.html"},"url":"https://jishnus420.github.io/CSP-tri1/2023/03/29/DS-hashmaps.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-03-29T00:00:00-05:00","datePublished":"2023-03-29T00:00:00-05:00","description":"Observing hashmaps with python dictionaries","headline":"Data Structures- Hashmaps, Sets, Hash Tables, Hashing and Collisions","mainEntityOfPage":{"@type":"WebPage","@id":"https://jishnus420.github.io/CSP-tri1/2023/03/29/DS-hashmaps.html"},"url":"https://jishnus420.github.io/CSP-tri1/2023/03/29/DS-hashmaps.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/CSP-tri1/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://jishnus420.github.io/CSP-tri1/feed.xml" title="Jishnu Singiresu" /><link rel="shortcut icon" type="image/x-icon" href="/CSP-tri1/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -81,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      4 min read
+      7 min read
     
 </span></p>
 
@@ -184,15 +182,28 @@ window.onload = wrap_img;
 <span class="nb">print</span><span class="p">(</span><span class="n">my_set</span><span class="p">)</span>  
 
 <span class="c1"># What do you notice in the output?</span>
-<span class="c1">#</span>
-<span class="c1">#</span>
+<span class="c1"># The output got rid of the duplicate values</span>
 
 <span class="c1"># Why do you think Sets are in the same tech talk as Hashmaps/Hashtables?</span>
-<span class="c1">#</span>
+<span class="c1"># Hashmaps probably do the same thing also gets rid of any duplicate data but maybe for data structures and stuff apart from values</span>
 <span class="c1">#</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{1, 2, 3}
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -245,7 +256,7 @@ window.onload = wrap_img;
 <span class="p">}</span>
 
 <span class="c1"># What data structures do you see?</span>
-<span class="c1">#</span>
+<span class="c1"># A list and dictionary can be seen, since there is square brackets and curly brackets</span>
 <span class="c1">#</span>
 
 <span class="c1"># Printing the dictionary</span>
@@ -253,6 +264,20 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{'title': 'Lover', 'artist': 'Taylor Swift', 'year': 2019, 'genre': ['Pop', 'Synth-pop'], 'tracks': {1: 'I Forgot That You Existed', 2: 'Cruel Summer', 3: 'Lover', 4: 'The Man', 5: 'The Archer', 6: 'I Think He Knows', 7: 'Miss Americana &amp; The Heartbreak Prince', 8: 'Paper Rings', 9: 'Cornelia Street', 10: 'Death By A Thousand Cuts', 11: 'London Boy', 12: "Soon You'll Get Better (feat. Dixie Chicks)", 13: 'False God', 14: 'You Need To Calm Down', 15: 'Afterglow', 16: 'Me! (feat. Brendon Urie of Panic! At The Disco)', 17: "It's Nice To Have A Friend", 18: 'Daylight'}}
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -275,6 +300,21 @@ window.onload = wrap_img;
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{1: 'I Forgot That You Existed', 2: 'Cruel Summer', 3: 'Lover', 4: 'The Man', 5: 'The Archer', 6: 'I Think He Knows', 7: 'Miss Americana &amp; The Heartbreak Prince', 8: 'Paper Rings', 9: 'Cornelia Street', 10: 'Death By A Thousand Cuts', 11: 'London Boy', 12: "Soon You'll Get Better (feat. Dixie Chicks)", 13: 'False God', 14: 'You Need To Calm Down', 15: 'Afterglow', 16: 'Me! (feat. Brendon Urie of Panic! At The Disco)', 17: "It's Nice To Have A Friend", 18: 'Daylight'}
+{1: 'I Forgot That You Existed', 2: 'Cruel Summer', 3: 'Lover', 4: 'The Man', 5: 'The Archer', 6: 'I Think He Knows', 7: 'Miss Americana &amp; The Heartbreak Prince', 8: 'Paper Rings', 9: 'Cornelia Street', 10: 'Death By A Thousand Cuts', 11: 'London Boy', 12: "Soon You'll Get Better (feat. Dixie Chicks)", 13: 'False God', 14: 'You Need To Calm Down', 15: 'Afterglow', 16: 'Me! (feat. Brendon Urie of Panic! At The Disco)', 17: "It's Nice To Have A Friend", 18: 'Daylight'}
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -294,6 +334,21 @@ window.onload = wrap_img;
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>The Man
+The Man
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -307,7 +362,7 @@ window.onload = wrap_img;
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">lover_album</span><span class="p">[</span><span class="s2">"producer"</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'Taylor Swift'</span><span class="p">,</span> <span class="s1">'Jack Antonoff'</span><span class="p">,</span> <span class="s1">'Joel Little'</span><span class="p">,</span> <span class="s1">'Taylor Swift'</span><span class="p">,</span> <span class="s1">'Louis Bell'</span><span class="p">,</span> <span class="s1">'Frank Dukes'</span><span class="p">]</span>
 
 <span class="c1"># What can you change to make sure there are no duplicate producers?</span>
-<span class="c1">#</span>
+<span class="c1"># You could implement a set</span>
 <span class="c1">#</span>
 
 <span class="c1"># Printing the dictionary</span>
@@ -315,6 +370,20 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{'genre', 'tracks', 'producer', 'artist', 'year', 'title'}
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -342,6 +411,20 @@ window.onload = wrap_img;
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{'title': 'Lover', 'artist': 'Taylor Swift', 'year': 2019, 'genre': ['Pop', 'Synth-pop'], 'tracks': {1: 'I Forgot That You Existed', 2: 'Cruel Summer', 3: 'Lover', 4: 'The Man', 5: 'The Archer', 6: 'I Think He Knows', 7: 'Miss Americana &amp; The Heartbreak Prince', 8: 'Paper Rings', 9: 'Cornelia Street', 10: 'Death By A Thousand Cuts', 11: 'London Boy', 12: "Soon You'll Get Better (feat. Dixie Chicks)", 13: 'False God', 14: 'You Need To Calm Down', 15: 'Afterglow', 16: 'Me! (feat. Brendon Urie of Panic! At The Disco)', 17: "It's Nice To Have A Friend", 18: 'Daylight', 19: 'All Of The Girls You Loved Before'}, 'producer': ['Taylor Swift', 'Jack Antonoff', 'Joel Little', 'Taylor Swift', 'Louis Bell', 'Frank Dukes']}
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -361,6 +444,25 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>title: Lover
+artist: Taylor Swift
+year: 2019
+genre: ['Pop', 'Synth-pop']
+tracks: {1: 'I Forgot That You Existed', 2: 'Cruel Summer', 3: 'Lover', 4: 'The Man', 5: 'The Archer', 6: 'I Think He Knows', 7: 'Miss Americana &amp; The Heartbreak Prince', 8: 'Paper Rings', 9: 'Cornelia Street', 10: 'Death By A Thousand Cuts', 11: 'London Boy', 12: "Soon You'll Get Better (feat. Dixie Chicks)", 13: 'False God', 14: 'You Need To Calm Down', 15: 'Afterglow', 16: 'Me! (feat. Brendon Urie of Panic! At The Disco)', 17: "It's Nice To Have A Friend", 18: 'Daylight', 19: 'All Of The Girls You Loved Before'}
+producer: ['Taylor Swift', 'Jack Antonoff', 'Joel Little', 'Taylor Swift', 'Louis Bell', 'Frank Dukes']
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -389,6 +491,20 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>['Pop', 'Synth-pop']
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
