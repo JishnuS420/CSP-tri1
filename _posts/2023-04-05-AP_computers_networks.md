@@ -20,6 +20,12 @@ List specification of your Computer, or Computers if working as Pair/Trio
 - OS: Jishnu - Windows 11, Alan - Windows, Tirth - Windows
 
 Define or describe usage of Computer using Computer Programs. Pictures are preferred over a lot of text.  Use your experience.
+Team Infographic:
+![]({{site.baseurl}}/images/1.png)
+![]({{site.baseurl}}/images/2.png)
+![]({{site.baseurl}}/images/3.png)
+
+Personal Definitions:
 - Input devices: Hardware thing that the user can interact with in order to send data to the computer
 Examples: Keyboard, Mouse, Mic, Camera, Touchscreen, e.t.c. 
 
@@ -27,25 +33,25 @@ Examples: Keyboard, Mouse, Mic, Camera, Touchscreen, e.t.c.
 Examples: Screen Display changing, Speakers, Headphone, Printer, Touchscreen, e.t.c.
 
 - Program File: File that contains a program with instructions for the computer to follow and execute
-Examples:
+Examples: Google, Brave, Steam, Microsoft, e.t.c.
 
-- Program Code: 
-Examples:
+- Program Code: The code that has the instructions/steps for a program to follow
+Examples: My Create Performance Task, this file and all the code in it, e.t.c.
 
-- Processes: 
-Examples:
+- Processes: A running program on a device 
+Examples: Vscode, Chrome, e.t.c.
 
-- Ports:
-Examples:
+- Ports: Endpoints for communication in a computer network
+Examples: 4000, 5900, e.t.c.
 
-- Data File: 
-Examples:
+- Data File: A computer file that contains a database or data (can be images, videos, and texts)
+Examples: the sql database we made, the lottery data me and alan made before, the data.csv file
 
-- Inspect Running Code: 
-Examples:
+- Inspect Running Code: Run and Debugging a file to find out errors by going 1 by 1 or stopping certain parts of the code
+Examples: VScode Run and Debug and breakpoints, Inspect in google pages 
 
-- Inspect Variables: 
-Examples:
+- Inspect Variables: Setting breakpoints at certain parts of code and observing the code line by line seeing how different variables are being affected
+Examples: VScode debug
 
 
 ### The Internet
@@ -62,19 +68,26 @@ Examples:
     - Bandwidth is usually measured in bits per second
 
 - Complete Vocabulary Matching Activity.  Incorporate this into your learnings from year.  To analyze measure path and latency use `traceroute` and `ping` commands from Linux Terminal.  
-    - Path 
-    - Route
-    - Computer System
-    - Computer Device
-    - Bandwidth
-    - Computer Network
+    - Path - a 
+    - Route = e
+    - Computer System - b
+    - Computer Device - c 
+    - Bandwidth - d
+    - Computer Network - f
 
 > Watch/review College Board Daily Video 4.1.2
 
 - Complete True of False Questions
+1. True, because open protocols enable greater freedom in sharing information across the internet
+2. False, because the IETF establishes internet standards but does not restrict access to the internet by manufacturers or individuals
+3. False, because the availability of MAC addresses is determined during file transfer, leading to different routes for transmission
+4. True, because Internet Protocol and other protocols establish specific behaviors within the system through agreed-upon rules
+5. False, because although UDP can provide faster transfer speeds, it does not guarantee consistent transfer success
+6. False, because the World Wide Web is not the internet but functions by linking individual web pages
+7. True, because HTTP is the protocol utilized by the World Wide Web to present website pages
 
 - Essential Knowledge
-    - The internet is a computer network consisting of interconnected networks that use standardized, open (nonproprierary) communication protocols.
+    - The internet is a computer network consisting of interconnected networks that use standardized, open (nonproprietary) communication protocols.
     - Access to the internet depends on the ability to connect a computing device to an internet connected device.
     - A protocol is an agreed-upon set of rules that specify the behavior of a system.
     - The protocols used in the internet are open, which allows users to easily connect additional computing devices to the internet.
@@ -89,10 +102,11 @@ Examples:
     - HTTP is a protocol used by the world wide web
     - The world wide web uses the internet
 
-- Go over AP videos, vocabulary, and essential knowledge.  Draw a diagram showing the internet and its many levels. A preferred diagram would using your knowledge of frontend, backend, deployment, etc.  Picture would highligh vocabulary by illustration. The below illustration have some ideas
+- Go over AP videos, vocabulary, and essential knowledge.  Draw a diagram showing the internet and its many levels. A preferred diagram would using your knowledge of frontend, backend, deployment, etc.  Picture would highlight vocabulary by illustration. The below illustration have some ideas
 
+![]({{site.baseurl}})/images/FullStack_1.png
 
-- Often we draw pictures of machines communicating over the Internet with arrows.  However, the real communication goes through protocol layers and the machine and then is trasported of the network.   For College Board and future Computer Knowledge you should become familiar with the following ...
+- Often we draw pictures of machines communicating over the Internet with arrows.  However, the real communication goes through protocol layers and the machine and then is transported of the network.   For College Board and future Computer Knowledge you should become familiar with the following ...
 
 ```
      User Machine  <---> Frontend Server <---> Backend Server
@@ -122,6 +136,16 @@ The "network" layer is responsible for ***routing data packets between networks*
 > Watch both Daily videos for 4.2
 
 - Complete the network activity, summarize your understanding of fault tolerance.
+1st Video for 4.2 Practice:
+
+1. Yes, it is fault tolerant because even if one path goes down, you can communicate with the other ones due to the other connections it has
+2. No, it isn't fault tolerant because there was only one path to F so if one wire goes down F is also cut off from the rest of the computers
+3. No, it isn't fault tolerant because there is only one path connecting A and G and without G, A can't communicate with the rets of the computers
+
+2nd Video for 4.2 Practice:
+1. C
+2. A, the internet is an fault tolerant network where devices can communicate with each other even if one path is down, there are multiple paths that can be used to transport information from one computer to another computer so information can be sent even if one path is down while its being repaired. The more paths a unit has, the more it would cost.
+
 
 
 ### Parallel and Distributed Computing
@@ -129,11 +153,16 @@ The "network" layer is responsible for ***routing data packets between networks*
 
 - What is naturally Distributed in Frontend/Backend archeticture?  
 
+The backend is naturally distributed as it typically consists of multiple servers that can handle different tasks and by distributing them, they can take in a lot more requests at a single time. Frontend on the other hand is usually executed from a single device as its only interacting with the user.
+
 - Analyze this command in Docker: ```ENV GUNICORN_CMD_ARGS="--workers=1 --bind=0.0.0.0:8086"```.   Determine if there is options are options in this command for parallel computing within the server that runs python/gunicorn.  Here is an [article](https://medium.com/building-the-system/gunicorn-3-means-of-concurrency-efbb547674b7)
 
+This command is used to configure the Gunicorn web server. The –workers option specifies the number of worker processes that Gunicorn should spawn to handle incoming requests. In this case, the value is set to 1, which means that Gunicorn will use a single worker process to handle all requests meaning that it wouldn't be able to handle parallel computing since there is only one worker to process everything
 
 > Last week we discussed parallel computing on local machine.  There are many options.  Here is something to get parallel computing work with a tool called Ray.
 - Review this [article](https://www.anyscale.com/blog/writing-your-first-distributed-python-application-with-ray)...  Can you get parallel code on images to work more effectively?  I have not tried Ray.
+
+Ray is a tool that helps you write Python programs that run faster by running them on multiple processors, GPUs, or machines at the same time
 
 - Code example from ChatGPT using squares.  This might be more interesting if nums we generated to be a lot bigger.
 
