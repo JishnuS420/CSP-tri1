@@ -4,10 +4,6 @@ comments: true
 layout: post
 title: Computers and Networks (Unit 4)
 description: Add Definitions from Unit 4 Computer Systems and Networks
-image: /images/apcsp.png
-categories: []
-type: ap
-week: 29
 ---
 
 ## Requirements
@@ -18,24 +14,38 @@ week: 29
 > As we have learned, a computer needs aa program to do something smart.  The sequence of a program initiates a series of actions with the computers Central Processing Unit (CPU). This component is essentially a binary machine focussing on program instructions provided.  The CPU retrieives and stores the data it acts upon in Random Access Memory (RAM). Between the CPU, RAM, and Storage Devices a computer can work with many programs and large amounts of data.
 
 List specification of your Computer, or Computers if working as Pair/Trio
-- Processor GHz:
-- Memory in GB:
-- Storage in GB:
-- OS:
+- Processor GHz: Jishnu - 3.20 GHz, 
+- Memory in GB: Jishnu - 15.7 GB, 
+- Storage in GB: Jishnu - 477 GB, 
+- OS: Jishnu - Windows 11, Alan - Windows, Tirth - Windows
 
 Define or describe usage of Computer using Computer Programs. Pictures are preferred over a lot of text.  Use your experience.
-- Input devices
-- Output devices
-- Program File
-- Program Code
-- Processes
-- Ports
-- Data File
-- Inspect Running Code
-- Inspect Variables
+- Input devices: Hardware thing that the user can interact with in order to send data to the computer
+Examples: Keyboard, Mouse, Mic, Camera, Touchscreen, e.t.c. 
 
+- Output devices: Converts or transfers data from a computer to a user friendly way 
+Examples: Screen Display changing, Speakers, Headphone, Printer, Touchscreen, e.t.c.
 
-![Computer Hardware]({{site.baseurl}}/images/cpu.jpeg)
+- Program File: File that contains a program with instructions for the computer to follow and execute
+Examples:
+
+- Program Code: 
+Examples:
+
+- Processes: 
+Examples:
+
+- Ports:
+Examples:
+
+- Data File: 
+Examples:
+
+- Inspect Running Code: 
+Examples:
+
+- Inspect Variables: 
+Examples:
 
 
 ### The Internet
@@ -80,8 +90,6 @@ Define or describe usage of Computer using Computer Programs. Pictures are prefe
     - The world wide web uses the internet
 
 - Go over AP videos, vocabulary, and essential knowledge.  Draw a diagram showing the internet and its many levels. A preferred diagram would using your knowledge of frontend, backend, deployment, etc.  Picture would highligh vocabulary by illustration. The below illustration have some ideas
-
-![Full Stack]({{site.baseurl}}/images/fullstack.png)
 
 
 - Often we draw pictures of machines communicating over the Internet with arrows.  However, the real communication goes through protocol layers and the machine and then is trasported of the network.   For College Board and future Computer Knowledge you should become familiar with the following ...
