@@ -20,6 +20,7 @@ List specification of your Computer, or Computers if working as Pair/Trio
 - OS: Jishnu - Windows 11, Alan - Windows, Tirth - Windows
 
 Define or describe usage of Computer using Computer Programs. Pictures are preferred over a lot of text.  Use your experience.
+
 Team Infographic:
 ![]({{site.baseurl}}/images/1.png)
 ![]({{site.baseurl}}/images/2.png)
@@ -27,30 +28,39 @@ Team Infographic:
 
 Personal Definitions:
 - Input devices: Hardware thing that the user can interact with in order to send data to the computer
+
 Examples: Keyboard, Mouse, Mic, Camera, Touchscreen, e.t.c. 
 
 - Output devices: Converts or transfers data from a computer to a user friendly way 
+
 Examples: Screen Display changing, Speakers, Headphone, Printer, Touchscreen, e.t.c.
 
 - Program File: File that contains a program with instructions for the computer to follow and execute
+
 Examples: Google, Brave, Steam, Microsoft, e.t.c.
 
 - Program Code: The code that has the instructions/steps for a program to follow
+
 Examples: My Create Performance Task, this file and all the code in it, e.t.c.
 
 - Processes: A running program on a device 
+
 Examples: Vscode, Chrome, e.t.c.
 
 - Ports: Endpoints for communication in a computer network
+
 Examples: 4000, 5900, e.t.c.
 
 - Data File: A computer file that contains a database or data (can be images, videos, and texts)
+
 Examples: the sql database we made, the lottery data me and alan made before, the data.csv file
 
 - Inspect Running Code: Run and Debugging a file to find out errors by going 1 by 1 or stopping certain parts of the code
+
 Examples: VScode Run and Debug and breakpoints, Inspect in google pages 
 
 - Inspect Variables: Setting breakpoints at certain parts of code and observing the code line by line seeing how different variables are being affected
+
 Examples: VScode debug
 
 
@@ -104,7 +114,7 @@ Examples: VScode debug
 
 - Go over AP videos, vocabulary, and essential knowledge.  Draw a diagram showing the internet and its many levels. A preferred diagram would using your knowledge of frontend, backend, deployment, etc.  Picture would highlight vocabulary by illustration. The below illustration have some ideas
 
-![]({{site.baseurl}})/images/FullStack_1.png
+![]({{site.baseurl}}/images/FullStack_1.png)
 
 - Often we draw pictures of machines communicating over the Internet with arrows.  However, the real communication goes through protocol layers and the machine and then is transported of the network.   For College Board and future Computer Knowledge you should become familiar with the following ...
 
