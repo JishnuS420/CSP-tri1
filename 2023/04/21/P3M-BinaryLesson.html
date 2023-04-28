@@ -483,19 +483,29 @@ You do the remainder of 23 by 50 which is 23 and would be X</p>
         <span class="ne">AssertionError</span> <span class="c1"># cleans up any junk operations</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">"Your selection of operation is not supported"</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Input the first binary number"</span><span class="p">)</span>
-<span class="n">x</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Input the first binary number"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span> <span class="o">+</span> <span class="n">x</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">input</span><span class="p">():</span>
+    <span class="n">cont</span> <span class="o">=</span> <span class="s1">'y'</span>
+    <span class="k">if</span> <span class="n">cont</span> <span class="o">==</span> <span class="s1">'y'</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Input the first binary number"</span><span class="p">)</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Input the first binary number"</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span> <span class="o">+</span> <span class="n">x</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Input your second binary number"</span><span class="p">)</span>
-<span class="n">y</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Input your second binary number"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span> <span class="o">+</span> <span class="n">y</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Input your second binary number"</span><span class="p">)</span>
+        <span class="n">y</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Input your second binary number"</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span> <span class="o">+</span> <span class="n">y</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Input the operation your trying to preform"</span><span class="p">)</span>
-<span class="n">operator</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Input the operation your trying to preform"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span> <span class="o">+</span> <span class="n">operator</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Input the operation your trying to preform"</span><span class="p">)</span>
+        <span class="n">operator</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Input the operation your trying to preform"</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span> <span class="o">+</span> <span class="n">operator</span><span class="p">)</span>
+        
+        <span class="n">binary_operations</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">operator</span><span class="p">)</span>
 
-<span class="n">binary_operations</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">operator</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Would you like to continue?"</span><span class="p">)</span>
+        <span class="n">cont</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Would you like to continue?"</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">"See you later!"</span>
+
+<span class="nb">input</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -510,28 +520,30 @@ You do the remainder of 23 by 50 which is 23 and would be X</p>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>
 Input the first binary number
-
-10101
-
-Input your second binary number
-
-10101
-
-Input the operation your trying to preform
-
--
 </pre>
 </div>
 </div>
 
 <div class="output_area">
 
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">TypeError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">/home/jishnus/vscode/CSP-tri1/_notebooks/2023-04-21-P3M-BinaryLesson.ipynb Cell 8</span> in <span class="ansi-cyan-fg">&lt;cell line: 56&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/jishnus/vscode/CSP-tri1/_notebooks/2023-04-21-P3M-BinaryLesson.ipynb#X10sdnNjb2RlLXJlbW90ZQ%3D%3D?line=52'&gt;53&lt;/a&gt;</span>     else:
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/jishnus/vscode/CSP-tri1/_notebooks/2023-04-21-P3M-BinaryLesson.ipynb#X10sdnNjb2RlLXJlbW90ZQ%3D%3D?line=53'&gt;54&lt;/a&gt;</span>         return "See you later!"
+<span class="ansi-green-fg">---&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/jishnus/vscode/CSP-tri1/_notebooks/2023-04-21-P3M-BinaryLesson.ipynb#X10sdnNjb2RlLXJlbW90ZQ%3D%3D?line=55'&gt;56&lt;/a&gt;</span> input()
 
+<span class="ansi-green-intense-fg ansi-bold">/home/jishnus/vscode/CSP-tri1/_notebooks/2023-04-21-P3M-BinaryLesson.ipynb Cell 8</span> in <span class="ansi-cyan-fg">input</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/jishnus/vscode/CSP-tri1/_notebooks/2023-04-21-P3M-BinaryLesson.ipynb#X10sdnNjb2RlLXJlbW90ZQ%3D%3D?line=35'&gt;36&lt;/a&gt;</span> if cont == 'y':
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/jishnus/vscode/CSP-tri1/_notebooks/2023-04-21-P3M-BinaryLesson.ipynb#X10sdnNjb2RlLXJlbW90ZQ%3D%3D?line=36'&gt;37&lt;/a&gt;</span>     print("\nInput the first binary number")
+<span class="ansi-green-fg">---&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/jishnus/vscode/CSP-tri1/_notebooks/2023-04-21-P3M-BinaryLesson.ipynb#X10sdnNjb2RlLXJlbW90ZQ%3D%3D?line=37'&gt;38&lt;/a&gt;</span>     x = input("Input the first binary number")
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/jishnus/vscode/CSP-tri1/_notebooks/2023-04-21-P3M-BinaryLesson.ipynb#X10sdnNjb2RlLXJlbW90ZQ%3D%3D?line=38'&gt;39&lt;/a&gt;</span>     print("\n" + x)
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/jishnus/vscode/CSP-tri1/_notebooks/2023-04-21-P3M-BinaryLesson.ipynb#X10sdnNjb2RlLXJlbW90ZQ%3D%3D?line=40'&gt;41&lt;/a&gt;</span>     print("\nInput your second binary number")
 
-<div class="output_text output_subarea output_execute_result">
-<pre>'Final Binary Value = 0'</pre>
+<span class="ansi-red-fg">TypeError</span>: input() takes 0 positional arguments but 1 was given</pre>
 </div>
-
 </div>
 
 </div>
