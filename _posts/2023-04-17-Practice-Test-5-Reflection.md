@@ -23,3 +23,5 @@ I got this question wrong because I forgot that binary is always 2^n but i just 
 ![]({{site.baseurl}}/images/prac2018-2.png)
 
 This question was a little bit confusing and I didn't really understand how to do it, the way you do this question is through input different values to make the situation realistic. The right answer here is C since when both P and Q are true, it does result in false.
+
+![]({{site.baseurl}}/images/conda-verify-jishnu.png)
