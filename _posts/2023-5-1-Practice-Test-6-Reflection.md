@@ -30,7 +30,7 @@ This question, what happened was I choose an option that was close to the answer
 
 This question I happened to get wrong because I thought that since we aren't given the number of students, we can't relate it to a proportionality and so I went with D but the answer is A because the conditions of the data only show the average not the actual assignment scores 
 
-# Question 66L
+# Question 66: 
 
 ![]({{site.baseurl}}/images/image5.png)
 
