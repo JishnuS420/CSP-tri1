@@ -559,29 +559,6 @@ Rank Url: https://coinranking.com/coin/Pe93bIOD2+lidodaotoken-ldo
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">TypeError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold">/home/jishnus/vscode/CSP-tri1/_notebooks/2022-10-03-PBL-python_rapidapi.ipynb Cell 13</span> in <span class="ansi-cyan-fg">&lt;cell line: 17&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/jishnus/vscode/CSP-tri1/_notebooks/2022-10-03-PBL-python_rapidapi.ipynb#X15sdnNjb2RlLXJlbW90ZQ%3D%3D?line=13&#39;&gt;14&lt;/a&gt;</span> # print(response.text)
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/jishnus/vscode/CSP-tri1/_notebooks/2022-10-03-PBL-python_rapidapi.ipynb#X15sdnNjb2RlLXJlbW90ZQ%3D%3D?line=15&#39;&gt;16&lt;/a&gt;</span> texts = response.json().get(&#39;data&#39;) # set texts equal tp data
-<span class="ansi-green-fg">---&gt; &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/jishnus/vscode/CSP-tri1/_notebooks/2022-10-03-PBL-python_rapidapi.ipynb#X15sdnNjb2RlLXJlbW90ZQ%3D%3D?line=16&#39;&gt;17&lt;/a&gt;</span> for text in texts:  # texts is a list above
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/jishnus/vscode/CSP-tri1/_notebooks/2022-10-03-PBL-python_rapidapi.ipynb#X15sdnNjb2RlLXJlbW90ZQ%3D%3D?line=17&#39;&gt;18&lt;/a&gt;</span>     if text[&#34;text&#34;] == &#34;I woke up in a cold sweat after an eerily realistic nightmare about _.&#34;:  # this filters for texts with I woke up in a cold sweat after an eerily realistic nightmare about _.
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/jishnus/vscode/CSP-tri1/_notebooks/2022-10-03-PBL-python_rapidapi.ipynb#X15sdnNjb2RlLXJlbW90ZQ%3D%3D?line=18&#39;&gt;19&lt;/a&gt;</span>         for key, value in text.items():  # this finds key, value pairs in the text &#34;I woke up in a cold sweat after an eerily realistic nightmare about _.&#34;&#34;
-
-<span class="ansi-red-fg">TypeError</span>: &#39;NoneType&#39; object is not iterable</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
     {% endraw %}
 
@@ -615,27 +592,6 @@ Rank Url: https://coinranking.com/coin/Pe93bIOD2+lidodaotoken-ldo
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>id 3517016
-wikiDataId Q228
-name Andorra
-country Andorra
-countryCode AD
-latitude 42.558333333
-longitude 1.555277777
-population 78151
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 

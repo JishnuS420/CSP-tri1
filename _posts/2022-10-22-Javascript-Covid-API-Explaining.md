@@ -14,6 +14,40 @@ layout: notebook
 
 <div class="container" id="notebook-container">
         
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><!-- HTML table fragment for page --></p>
+<table>
+    <thead>
+    <tr>
+      <th>Time</th>
+      <th>All-time Cases</th>
+      <th>Recorded Deaths</th>
+      <th>Active Cases</th>
+    </tr>
+    </thead>
+    <tbody>
+      <td id="time"></td>
+      <td id="total_cases"></td>
+      <td id="total_deaths"></td>
+      <td id="active_cases"></td>
+    </tbody>
+  </table><table>
+    <thead>
+    <tr>
+      <th>Country</th>
+      <th>All-time Cases</th>
+      <th>Recorded Deaths</th>
+      <th>Active Cases</th>
+    </tr>
+    </thead>
+    <tbody id="result">
+      <!-- generated rows -->
+    </tbody>
+  </table>
+</div>
+</div>
+</div>
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -21,154 +55,89 @@ layout: notebook
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">&lt;!</span>-- HTML table fragment <span class="k">for</span> page --&gt;
-<span class="o">&lt;</span><span class="n">table</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="n">thead</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="n">tr</span><span class="o">&gt;</span>
-      <span class="o">&lt;</span><span class="n">th</span><span class="o">&gt;</span><span class="n">Time</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
-      <span class="o">&lt;</span><span class="n">th</span><span class="o">&gt;</span><span class="n">All</span><span class="o">-</span><span class="n">time</span> <span class="n">Cases</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
-      <span class="o">&lt;</span><span class="n">th</span><span class="o">&gt;</span><span class="n">Recorded</span> <span class="n">Deaths</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
-      <span class="o">&lt;</span><span class="n">th</span><span class="o">&gt;</span><span class="n">Active</span> <span class="n">Cases</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
-    <span class="o">&lt;/</span><span class="n">tr</span><span class="o">&gt;</span>
-    <span class="o">&lt;/</span><span class="n">thead</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="n">tbody</span><span class="o">&gt;</span>
-      <span class="o">&lt;</span><span class="n">td</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;time&quot;</span><span class="o">&gt;&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
-      <span class="o">&lt;</span><span class="n">td</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;total_cases&quot;</span><span class="o">&gt;&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
-      <span class="o">&lt;</span><span class="n">td</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;total_deaths&quot;</span><span class="o">&gt;&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
-      <span class="o">&lt;</span><span class="n">td</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;active_cases&quot;</span><span class="o">&gt;&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
-    <span class="o">&lt;/</span><span class="n">tbody</span><span class="o">&gt;</span>
-  <span class="o">&lt;/</span><span class="n">table</span><span class="o">&gt;</span>
-  
-  <span class="o">&lt;</span><span class="n">table</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="n">thead</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="n">tr</span><span class="o">&gt;</span>
-      <span class="o">&lt;</span><span class="n">th</span><span class="o">&gt;</span><span class="n">Country</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
-      <span class="o">&lt;</span><span class="n">th</span><span class="o">&gt;</span><span class="n">All</span><span class="o">-</span><span class="n">time</span> <span class="n">Cases</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
-      <span class="o">&lt;</span><span class="n">th</span><span class="o">&gt;</span><span class="n">Recorded</span> <span class="n">Deaths</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
-      <span class="o">&lt;</span><span class="n">th</span><span class="o">&gt;</span><span class="n">Active</span> <span class="n">Cases</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
-    <span class="o">&lt;/</span><span class="n">tr</span><span class="o">&gt;</span>
-    <span class="o">&lt;/</span><span class="n">thead</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="n">tbody</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;result&quot;</span><span class="o">&gt;</span>
-      <span class="o">&lt;!</span>-- generated rows --&gt;
-    <span class="o">&lt;/</span><span class="n">tbody</span><span class="o">&gt;</span>
-  <span class="o">&lt;/</span><span class="n">table</span><span class="o">&gt;</span>
-</pre></div>
+<div class=" highlight hl-javascript"><pre><span></span><span class="c">&lt;!--</span> <span class="nx">Script</span> <span class="nx">is</span> <span class="nx">layed</span> <span class="nx">out</span> <span class="k">in</span> <span class="nx">a</span> <span class="nx">sequence</span> <span class="p">(</span><span class="nx">no</span> <span class="kd">function</span><span class="p">)</span> <span class="nx">and</span> <span class="nx">will</span> <span class="nx">execute</span> <span class="nx">when</span> <span class="nx">page</span> <span class="nx">is</span> <span class="nx">loaded</span> <span class="o">--&gt;</span>
+<span class="o">&lt;</span><span class="nx">script</span><span class="o">&gt;</span>
+  <span class="c1">// prepare HTML result container for new output</span>
+  <span class="kr">const</span> <span class="nx">resultContainer</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;result&quot;</span><span class="p">);</span>
 
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-cyan-fg">  File </span><span class="ansi-green-fg">&lt;tokenize&gt;:17</span>
-<span class="ansi-red-fg">    &lt;/table&gt;</span>
-    ^
-<span class="ansi-red-fg">IndentationError</span><span class="ansi-red-fg">:</span> unindent does not match any outer indentation level
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-    {% endraw %}
-
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">&lt;!</span>-- Script is layed out in a sequence <span class="o">(</span>no <span class="k">function</span><span class="o">)</span> and will execute when page is loaded --&gt;
-<span class="o">&lt;</span><span class="n">script</span><span class="o">&gt;</span>
-  <span class="o">//</span> <span class="n">prepare</span> <span class="n">HTML</span> <span class="n">result</span> <span class="n">container</span> <span class="k">for</span> <span class="n">new</span> <span class="n">output</span>
-  <span class="n">const</span> <span class="n">resultContainer</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s2">&quot;result&quot;</span><span class="p">);</span>
-
-  <span class="o">//</span> <span class="n">prepare</span> <span class="n">fetch</span> <span class="n">options</span>
-  <span class="n">const</span> <span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://flask.nighthawkcodingsociety.com/api/covid/&quot;</span><span class="p">;</span>
-  <span class="n">const</span> <span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="n">method</span><span class="p">:</span> <span class="s1">&#39;GET&#39;</span><span class="p">,</span> <span class="o">//</span> <span class="o">*</span><span class="n">GET</span><span class="p">,</span> <span class="n">POST</span><span class="p">,</span> <span class="n">PUT</span><span class="p">,</span> <span class="n">DELETE</span><span class="p">,</span> <span class="n">etc</span><span class="o">.</span>
-    <span class="n">mode</span><span class="p">:</span> <span class="s1">&#39;cors&#39;</span><span class="p">,</span> <span class="o">//</span> <span class="n">no</span><span class="o">-</span><span class="n">cors</span><span class="p">,</span> <span class="o">*</span><span class="n">cors</span><span class="p">,</span> <span class="n">same</span><span class="o">-</span><span class="n">origin</span>
-    <span class="n">cache</span><span class="p">:</span> <span class="s1">&#39;default&#39;</span><span class="p">,</span> <span class="o">//</span> <span class="o">*</span><span class="n">default</span><span class="p">,</span> <span class="n">no</span><span class="o">-</span><span class="n">cache</span><span class="p">,</span> <span class="n">reload</span><span class="p">,</span> <span class="n">force</span><span class="o">-</span><span class="n">cache</span><span class="p">,</span> <span class="n">only</span><span class="o">-</span><span class="k">if</span><span class="o">-</span><span class="n">cached</span>
-    <span class="n">credentials</span><span class="p">:</span> <span class="s1">&#39;omit&#39;</span><span class="p">,</span> <span class="o">//</span> <span class="n">include</span><span class="p">,</span> <span class="o">*</span><span class="n">same</span><span class="o">-</span><span class="n">origin</span><span class="p">,</span> <span class="n">omit</span>
-    <span class="n">headers</span><span class="p">:</span> <span class="p">{</span>
-      <span class="s1">&#39;Content-Type&#39;</span><span class="p">:</span> <span class="s1">&#39;application/json&#39;</span>
-      <span class="o">//</span> <span class="s1">&#39;Content-Type&#39;</span><span class="p">:</span> <span class="s1">&#39;application/x-www-form-urlencoded&#39;</span><span class="p">,</span>
+  <span class="c1">// prepare fetch options</span>
+  <span class="kr">const</span> <span class="nx">url</span> <span class="o">=</span> <span class="s2">&quot;https://flask.nighthawkcodingsociety.com/api/covid/&quot;</span><span class="p">;</span>
+  <span class="kr">const</span> <span class="nx">headers</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="nx">method</span><span class="o">:</span> <span class="s1">&#39;GET&#39;</span><span class="p">,</span> <span class="c1">// *GET, POST, PUT, DELETE, etc.</span>
+    <span class="nx">mode</span><span class="o">:</span> <span class="s1">&#39;cors&#39;</span><span class="p">,</span> <span class="c1">// no-cors, *cors, same-origin</span>
+    <span class="nx">cache</span><span class="o">:</span> <span class="s1">&#39;default&#39;</span><span class="p">,</span> <span class="c1">// *default, no-cache, reload, force-cache, only-if-cached</span>
+    <span class="nx">credentials</span><span class="o">:</span> <span class="s1">&#39;omit&#39;</span><span class="p">,</span> <span class="c1">// include, *same-origin, omit</span>
+    <span class="nx">headers</span><span class="o">:</span> <span class="p">{</span>
+      <span class="s1">&#39;Content-Type&#39;</span><span class="o">:</span> <span class="s1">&#39;application/json&#39;</span>
+      <span class="c1">// &#39;Content-Type&#39;: &#39;application/x-www-form-urlencoded&#39;,</span>
     <span class="p">},</span>
   <span class="p">};</span>
 
-  <span class="o">//</span> <span class="n">fetch</span> <span class="n">the</span> <span class="n">API</span>
-  <span class="n">fetch</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="p">)</span>
-    <span class="o">//</span> <span class="n">response</span> <span class="ow">is</span> <span class="n">a</span> <span class="n">RESTful</span> <span class="s2">&quot;promise&quot;</span> <span class="n">on</span> <span class="nb">any</span> <span class="n">successful</span> <span class="n">fetch</span>
-    <span class="o">.</span><span class="n">then</span><span class="p">(</span><span class="n">response</span> <span class="o">=&gt;</span> <span class="p">{</span>
-      <span class="o">//</span> <span class="n">check</span> <span class="k">for</span> <span class="n">response</span> <span class="n">errors</span>
-      <span class="k">if</span> <span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">status</span> <span class="o">!==</span> <span class="mi">200</span><span class="p">)</span> <span class="p">{</span>
-          <span class="n">const</span> <span class="n">errorMsg</span> <span class="o">=</span> <span class="s1">&#39;Database response error: &#39;</span> <span class="o">+</span> <span class="n">response</span><span class="o">.</span><span class="n">status</span><span class="p">;</span>
-          <span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">errorMsg</span><span class="p">);</span>
-          <span class="n">const</span> <span class="n">tr</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">createElement</span><span class="p">(</span><span class="s2">&quot;tr&quot;</span><span class="p">);</span>
-          <span class="n">const</span> <span class="n">td</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">createElement</span><span class="p">(</span><span class="s2">&quot;td&quot;</span><span class="p">);</span>
-          <span class="n">td</span><span class="o">.</span><span class="n">innerHTML</span> <span class="o">=</span> <span class="n">errorMsg</span><span class="p">;</span>
-          <span class="n">tr</span><span class="o">.</span><span class="n">appendChild</span><span class="p">(</span><span class="n">td</span><span class="p">);</span>
-          <span class="n">resultContainer</span><span class="o">.</span><span class="n">appendChild</span><span class="p">(</span><span class="n">tr</span><span class="p">);</span>
+  <span class="c1">// fetch the API</span>
+  <span class="nx">fetch</span><span class="p">(</span><span class="nx">url</span><span class="p">,</span> <span class="nx">headers</span><span class="p">)</span>
+    <span class="c1">// response is a RESTful &quot;promise&quot; on any successful fetch</span>
+    <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span> <span class="p">=&gt;</span> <span class="p">{</span>
+      <span class="c1">// check for response errors</span>
+      <span class="k">if</span> <span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">status</span> <span class="o">!==</span> <span class="mf">200</span><span class="p">)</span> <span class="p">{</span>
+          <span class="kr">const</span> <span class="nx">errorMsg</span> <span class="o">=</span> <span class="s1">&#39;Database response error: &#39;</span> <span class="o">+</span> <span class="nx">response</span><span class="p">.</span><span class="nx">status</span><span class="p">;</span>
+          <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">errorMsg</span><span class="p">);</span>
+          <span class="kr">const</span> <span class="nx">tr</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&quot;tr&quot;</span><span class="p">);</span>
+          <span class="kr">const</span> <span class="nx">td</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&quot;td&quot;</span><span class="p">);</span>
+          <span class="nx">td</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">errorMsg</span><span class="p">;</span>
+          <span class="nx">tr</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">td</span><span class="p">);</span>
+          <span class="nx">resultContainer</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">tr</span><span class="p">);</span>
           <span class="k">return</span><span class="p">;</span>
       <span class="p">}</span>
-      <span class="o">//</span> <span class="n">valid</span> <span class="n">response</span> <span class="n">will</span> <span class="n">have</span> <span class="n">json</span> <span class="n">data</span>
-      <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span><span class="o">.</span><span class="n">then</span><span class="p">(</span><span class="n">data</span> <span class="o">=&gt;</span> <span class="p">{</span>
-          <span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">data</span><span class="p">);</span>
-          <span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">world_total</span><span class="p">)</span>
+      <span class="c1">// valid response will have json data</span>
+      <span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">().</span><span class="nx">then</span><span class="p">(</span><span class="nx">data</span> <span class="p">=&gt;</span> <span class="p">{</span>
+          <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span>
+          <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">world_total</span><span class="p">)</span>
 
-          <span class="o">//</span> <span class="n">World</span> <span class="n">Data</span>
-          <span class="n">document</span><span class="o">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s2">&quot;time&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">innerHTML</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">world_total</span><span class="o">.</span><span class="n">statistic_taken_at</span><span class="p">;</span>
-          <span class="n">document</span><span class="o">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s2">&quot;total_cases&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">innerHTML</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">world_total</span><span class="o">.</span><span class="n">total_cases</span><span class="p">;</span>
-          <span class="n">document</span><span class="o">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s2">&quot;total_deaths&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">innerHTML</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">world_total</span><span class="o">.</span><span class="n">total_deaths</span><span class="p">;</span>
-          <span class="n">document</span><span class="o">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s2">&quot;active_cases&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">innerHTML</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">world_total</span><span class="o">.</span><span class="n">active_cases</span><span class="p">;</span>
+          <span class="c1">// World Data</span>
+          <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;time&quot;</span><span class="p">).</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">data</span><span class="p">.</span><span class="nx">world_total</span><span class="p">.</span><span class="nx">statistic_taken_at</span><span class="p">;</span>
+          <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;total_cases&quot;</span><span class="p">).</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">data</span><span class="p">.</span><span class="nx">world_total</span><span class="p">.</span><span class="nx">total_cases</span><span class="p">;</span>
+          <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;total_deaths&quot;</span><span class="p">).</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">data</span><span class="p">.</span><span class="nx">world_total</span><span class="p">.</span><span class="nx">total_deaths</span><span class="p">;</span>
+          <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;active_cases&quot;</span><span class="p">).</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">data</span><span class="p">.</span><span class="nx">world_total</span><span class="p">.</span><span class="nx">active_cases</span><span class="p">;</span>
 
-          <span class="o">//</span> <span class="n">Country</span> <span class="n">data</span>
-          <span class="k">for</span> <span class="p">(</span><span class="n">const</span> <span class="n">row</span> <span class="n">of</span> <span class="n">data</span><span class="o">.</span><span class="n">countries_stat</span><span class="p">)</span> <span class="p">{</span>
-            <span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">row</span><span class="p">);</span>
+          <span class="c1">// Country data</span>
+          <span class="k">for</span> <span class="p">(</span><span class="kr">const</span> <span class="nx">row</span> <span class="k">of</span> <span class="nx">data</span><span class="p">.</span><span class="nx">countries_stat</span><span class="p">)</span> <span class="p">{</span>
+            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">row</span><span class="p">);</span>
 
-            <span class="o">//</span> <span class="n">tr</span> <span class="k">for</span> <span class="n">each</span> <span class="n">row</span>
-            <span class="n">const</span> <span class="n">tr</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">createElement</span><span class="p">(</span><span class="s2">&quot;tr&quot;</span><span class="p">);</span>
-            <span class="o">//</span> <span class="n">td</span> <span class="k">for</span> <span class="n">each</span> <span class="n">column</span>
-            <span class="n">const</span> <span class="n">name</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">createElement</span><span class="p">(</span><span class="s2">&quot;td&quot;</span><span class="p">);</span>
-            <span class="n">const</span> <span class="n">cases</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">createElement</span><span class="p">(</span><span class="s2">&quot;td&quot;</span><span class="p">);</span>
-            <span class="n">const</span> <span class="n">deaths</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">createElement</span><span class="p">(</span><span class="s2">&quot;td&quot;</span><span class="p">);</span>
-            <span class="n">const</span> <span class="n">active</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">createElement</span><span class="p">(</span><span class="s2">&quot;td&quot;</span><span class="p">);</span>
+            <span class="c1">// tr for each row</span>
+            <span class="kr">const</span> <span class="nx">tr</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&quot;tr&quot;</span><span class="p">);</span>
+            <span class="c1">// td for each column</span>
+            <span class="kr">const</span> <span class="nx">name</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&quot;td&quot;</span><span class="p">);</span>
+            <span class="kr">const</span> <span class="nx">cases</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&quot;td&quot;</span><span class="p">);</span>
+            <span class="kr">const</span> <span class="nx">deaths</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&quot;td&quot;</span><span class="p">);</span>
+            <span class="kr">const</span> <span class="nx">active</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&quot;td&quot;</span><span class="p">);</span>
 
-            <span class="o">//</span> <span class="n">data</span> <span class="ow">is</span> <span class="n">specific</span> <span class="n">to</span> <span class="n">the</span> <span class="n">API</span>
-            <span class="n">name</span><span class="o">.</span><span class="n">innerHTML</span> <span class="o">=</span> <span class="n">row</span><span class="o">.</span><span class="n">country_name</span><span class="p">;</span>
-            <span class="n">cases</span><span class="o">.</span><span class="n">innerHTML</span> <span class="o">=</span> <span class="n">row</span><span class="o">.</span><span class="n">cases</span><span class="p">;</span> 
-            <span class="n">deaths</span><span class="o">.</span><span class="n">innerHTML</span> <span class="o">=</span> <span class="n">row</span><span class="o">.</span><span class="n">deaths</span><span class="p">;</span> 
-            <span class="n">active</span><span class="o">.</span><span class="n">innerHTML</span> <span class="o">=</span> <span class="n">row</span><span class="o">.</span><span class="n">active_cases</span><span class="p">;</span> 
+            <span class="c1">// data is specific to the API</span>
+            <span class="nx">name</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">row</span><span class="p">.</span><span class="nx">country_name</span><span class="p">;</span>
+            <span class="nx">cases</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">row</span><span class="p">.</span><span class="nx">cases</span><span class="p">;</span> 
+            <span class="nx">deaths</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">row</span><span class="p">.</span><span class="nx">deaths</span><span class="p">;</span> 
+            <span class="nx">active</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">row</span><span class="p">.</span><span class="nx">active_cases</span><span class="p">;</span> 
 
-            <span class="o">//</span> <span class="n">this</span> <span class="n">builds</span> <span class="n">td</span><span class="s1">&#39;s into tr</span>
-            <span class="n">tr</span><span class="o">.</span><span class="n">appendChild</span><span class="p">(</span><span class="n">name</span><span class="p">);</span>
-            <span class="n">tr</span><span class="o">.</span><span class="n">appendChild</span><span class="p">(</span><span class="n">cases</span><span class="p">);</span>
-            <span class="n">tr</span><span class="o">.</span><span class="n">appendChild</span><span class="p">(</span><span class="n">deaths</span><span class="p">);</span>
-            <span class="n">tr</span><span class="o">.</span><span class="n">appendChild</span><span class="p">(</span><span class="n">active</span><span class="p">);</span>
+            <span class="c1">// this builds td&#39;s into tr</span>
+            <span class="nx">tr</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">name</span><span class="p">);</span>
+            <span class="nx">tr</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">cases</span><span class="p">);</span>
+            <span class="nx">tr</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">deaths</span><span class="p">);</span>
+            <span class="nx">tr</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">active</span><span class="p">);</span>
 
-            <span class="o">//</span> <span class="n">add</span> <span class="n">HTML</span> <span class="n">to</span> <span class="n">container</span>
-            <span class="n">resultContainer</span><span class="o">.</span><span class="n">appendChild</span><span class="p">(</span><span class="n">tr</span><span class="p">);</span>
+            <span class="c1">// add HTML to container</span>
+            <span class="nx">resultContainer</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">tr</span><span class="p">);</span>
           <span class="p">}</span>
       <span class="p">})</span>
   <span class="p">})</span>
-  <span class="o">//</span> <span class="n">catch</span> <span class="n">fetch</span> <span class="n">errors</span> <span class="p">(</span><span class="n">ie</span> <span class="n">ACCESS</span> <span class="n">to</span> <span class="n">server</span> <span class="n">blocked</span><span class="p">)</span>
-  <span class="o">.</span><span class="n">catch</span><span class="p">(</span><span class="n">err</span> <span class="o">=&gt;</span> <span class="p">{</span>
-    <span class="n">console</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="n">err</span><span class="p">);</span>
-    <span class="n">const</span> <span class="n">tr</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">createElement</span><span class="p">(</span><span class="s2">&quot;tr&quot;</span><span class="p">);</span>
-    <span class="n">const</span> <span class="n">td</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">createElement</span><span class="p">(</span><span class="s2">&quot;td&quot;</span><span class="p">);</span>
-    <span class="n">td</span><span class="o">.</span><span class="n">innerHTML</span> <span class="o">=</span> <span class="n">err</span><span class="p">;</span>
-    <span class="n">tr</span><span class="o">.</span><span class="n">appendChild</span><span class="p">(</span><span class="n">td</span><span class="p">);</span>
-    <span class="n">resultContainer</span><span class="o">.</span><span class="n">appendChild</span><span class="p">(</span><span class="n">tr</span><span class="p">);</span>
+  <span class="c1">// catch fetch errors (ie ACCESS to server blocked)</span>
+  <span class="p">.</span><span class="k">catch</span><span class="p">(</span><span class="nx">err</span> <span class="p">=&gt;</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">err</span><span class="p">);</span>
+    <span class="kr">const</span> <span class="nx">tr</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&quot;tr&quot;</span><span class="p">);</span>
+    <span class="kr">const</span> <span class="nx">td</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&quot;td&quot;</span><span class="p">);</span>
+    <span class="nx">td</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">err</span><span class="p">;</span>
+    <span class="nx">tr</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">td</span><span class="p">);</span>
+    <span class="nx">resultContainer</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">tr</span><span class="p">);</span>
   <span class="p">});</span>
-<span class="o">&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="err">/script&gt;</span>
 </pre></div>
 
     </div>
@@ -182,11 +151,21 @@ layout: notebook
 
 <div class="output_subarea output_text output_error">
 <pre>
-<span class="ansi-cyan-fg">  Input </span><span class="ansi-green-fg">In [7]</span>
-<span class="ansi-red-fg">    &lt;!-- HTML table fragment for page --&gt;</span>
-    ^
-<span class="ansi-red-fg">SyntaxError</span><span class="ansi-red-fg">:</span> invalid syntax
-</pre>
+evalmachine.&lt;anonymous&gt;:2
+&lt;script&gt;
+^
+
+SyntaxError: Unexpected token &lt;
+    at createScript (vm.js:56:10)
+    at Object.runInThisContext (vm.js:97:10)
+    at run ([eval]:1020:15)
+    at onRunRequest ([eval]:864:18)
+    at onMessage ([eval]:828:13)
+    at emitTwo (events.js:106:13)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:758:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+    at process._tickCallback (internal/process/next_tick.js:104:9)</pre>
 </div>
 </div>
 
