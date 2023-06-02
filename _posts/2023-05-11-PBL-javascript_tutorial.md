@@ -178,10 +178,10 @@ layout: notebook
 
 
 
-<div id="8b2e4578-55e2-4055-a4f0-24236cb394e8"></div>
+<div id="3cc6acad-62bf-4a76-9759-a18e170b20a2"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#8b2e4578-55e2-4055-a4f0-24236cb394e8');
+var element = $('#3cc6acad-62bf-4a76-9759-a18e170b20a2');
 console.log("JavaScript/Jupyter Output Intro");
 
 // Browser Console output; debugging or tracing
@@ -254,10 +254,10 @@ element.append('<br><b>Hello World Again!');
 
 
 
-<div id="baed93c1-5b50-450e-b492-e3f7902f6423"></div>
+<div id="46f41da3-9d97-4f43-aa10-d68c9da34674"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#baed93c1-5b50-450e-b492-e3f7902f6423');
+var element = $('#46f41da3-9d97-4f43-aa10-d68c9da34674');
 console.log("Variable Definition");
 
 var msg = "Hello, World!";
@@ -339,10 +339,10 @@ element.text(msg);
 
 
 
-<div id="b8fc67ce-3d5b-4d64-a653-7c12c5b2f0ee"></div>
+<div id="432a35ab-6ed3-40d7-ac70-d84231bfad1f"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#b8fc67ce-3d5b-4d64-a653-7c12c5b2f0ee');
+var element = $('#432a35ab-6ed3-40d7-ac70-d84231bfad1f');
 console.log("Function Definition");
 
 /* Function: logIt
@@ -450,10 +450,10 @@ logIt(msg + "  " + classOf); // concatenation of strings
 
 
 
-<div id="8ccb8671-09c1-45de-a55d-11f36e40aeb0"></div>
+<div id="ace45253-a971-4912-ae28-5b73a632b1d9"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#8ccb8671-09c1-45de-a55d-11f36e40aeb0');
+var element = $('#ace45253-a971-4912-ae28-5b73a632b1d9');
 console.log("Examine Data Types");
 
 // Function to add typeof to output
@@ -700,10 +700,10 @@ logIt(JSON.stringify(person));  //method used to convert this object into readab
 
 
 
-<div id="4253995c-8a13-4d69-9c7f-53992a4f9098"></div>
+<div id="59abcbbe-a1a7-491d-858a-262c02a6ca82"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#4253995c-8a13-4d69-9c7f-53992a4f9098');
+var element = $('#59abcbbe-a1a7-491d-858a-262c02a6ca82');
 console.log("Person objects");
 
 /* class: Person
@@ -921,10 +921,10 @@ student.logIt(); // log to console
 
 
 
-<div id="7e98135a-b5f0-4e9f-bd5e-b535c2c2d0b5"></div>
+<div id="89c34ad1-9ac2-4f57-b9fe-31652d8f8a69"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#7e98135a-b5f0-4e9f-bd5e-b535c2c2d0b5');
+var element = $('#89c34ad1-9ac2-4f57-b9fe-31652d8f8a69');
 console.log("Classroom object");
 
 /* class: Person
@@ -1113,10 +1113,10 @@ $('#jsonText').text(compsci.json);  // posts/embeds/writes compsci.json to HTML 
 
 
 
-<div id="0ad34478-9a74-476a-8916-3efd678c7ed1"></div>
+<div id="ea66e0a4-fd60-4b88-917e-695a5a20cca4"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#0ad34478-9a74-476a-8916-3efd678c7ed1');
+var element = $('#ea66e0a4-fd60-4b88-917e-695a5a20cca4');
 console.log("Classroom Web Page");
 
 // extract JSON text from HTML page
@@ -1434,394 +1434,6 @@ $.ajax(settings).done(function (response) {
 });
 });
 </script>
-
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    {% endraw %}
-
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%js</span>
-<span class="kr">class</span> <span class="nx">Leaderboard</span> <span class="p">{</span>
-  <span class="nx">constructor</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">distance</span><span class="p">,</span> <span class="nx">score</span><span class="p">,</span> <span class="nx">date</span><span class="p">,</span> <span class="nx">locations</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">this</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="nx">name</span><span class="p">;</span>
-    <span class="k">this</span><span class="p">.</span><span class="nx">distance</span> <span class="o">=</span> <span class="nx">distance</span><span class="p">;</span>
-    <span class="k">this</span><span class="p">.</span><span class="nx">score</span> <span class="o">=</span> <span class="nx">score</span><span class="p">;</span>
-    <span class="k">this</span><span class="p">.</span><span class="nx">date</span> <span class="o">=</span> <span class="nx">date</span><span class="p">;</span>
-    <span class="k">this</span><span class="p">.</span><span class="nx">locations</span> <span class="o">=</span> <span class="nx">locations</span><span class="p">;</span>
-  <span class="p">}</span>
-
-  <span class="nx">get</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kr">const</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{</span><span class="nx">name</span><span class="o">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">,</span> <span class="nx">distance</span><span class="o">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">distance</span><span class="p">,</span> <span class="nx">score</span><span class="o">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">score</span><span class="p">,</span> <span class="nx">date</span><span class="o">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">date</span><span class="p">,</span> <span class="nx">locations</span><span class="o">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">locations</span><span class="p">};</span>
-    <span class="kr">const</span> <span class="nx">json</span> <span class="o">=</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">obj</span><span class="p">);</span>
-    <span class="k">return</span> <span class="nx">json</span><span class="p">;</span>
-  <span class="p">}</span>
-
-  <span class="nx">logIt</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">//Person Object</span>
-    <span class="nx">console</span><span class="p">.</span><span class="nx">info</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
-    <span class="c1">//Log to Jupter</span>
-    <span class="nx">element</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="s2">&quot;Leaderboard json &lt;br&gt;&quot;</span><span class="p">);</span>
-    <span class="nx">element</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">get</span><span class="p">()</span> <span class="o">+</span> <span class="s2">&quot;&lt;br&gt;&quot;</span><span class="p">);</span>  
-    <span class="c1">//alert(this.get());</span>
-  <span class="p">}</span>
-<span class="p">}</span>
-
-<span class="kr">class</span> <span class="nx">Leaderboardcollection</span> <span class="p">{</span>
-  <span class="nx">constructor</span><span class="p">(</span><span class="nx">leaderboard</span><span class="p">,</span> <span class="nx">group</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">this</span><span class="p">.</span><span class="nx">leaderboards</span> <span class="o">=</span> <span class="p">[...</span><span class="nx">leaderboard</span><span class="p">];</span> <span class="c1">// ... spread option</span>
-    <span class="k">this</span><span class="p">.</span><span class="nx">json</span> <span class="o">=</span> <span class="s1">&#39;{&#39;</span> <span class="o">+</span> <span class="nx">group</span> <span class="o">+</span> <span class="s2">&quot;_leaderboard:&quot;</span> <span class="o">+</span> <span class="s1">&#39;[&#39;</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="nx">leaderboards</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">leaderboard</span> <span class="p">=&gt;</span> <span class="nx">leaderboard</span><span class="p">.</span><span class="nx">get</span><span class="p">())</span> <span class="o">+</span> <span class="s1">&#39;]}&#39;</span><span class="p">;</span>
-  <span class="p">}</span>
-
-  <span class="nx">displayCollection</span><span class="p">()</span> <span class="p">{</span>
-    <span class="nx">element</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="s2">&quot;&lt;br&gt;Leaderboard Collection object in JSON&lt;br&gt;&quot;</span><span class="p">);</span>
-    <span class="nx">element</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">json</span> <span class="o">+</span> <span class="s2">&quot;&lt;br&gt;&quot;</span><span class="p">);</span>  
-    <span class="c1">//alert(this.json);</span>
-  <span class="p">}</span>
-<span class="p">}</span>
-
-<span class="kd">function</span> <span class="nx">constructLeaderboards</span><span class="p">()</span> <span class="p">{</span>
-
-    <span class="c1">// define a Array of leaderboard objects</span>
-    <span class="kr">const</span> <span class="nx">leaderboards</span> <span class="o">=</span> <span class="p">[</span> 
-        <span class="k">new</span> <span class="nx">Leaderboard</span><span class="p">(</span><span class="s2">&quot;Chester&quot;</span><span class="p">,</span> <span class="s2">&quot;17.58&quot;</span><span class="p">,</span> <span class="s2">&quot;1600&quot;</span><span class="p">,</span> <span class="s2">&quot;2023-28-05&quot;</span><span class="p">,</span> <span class="s2">&quot;Balboa Park, Firehouse, Legoland&quot;</span><span class="p">),</span>
-        <span class="k">new</span> <span class="nx">Leaderboard</span><span class="p">(</span><span class="s2">&quot;Chase&quot;</span><span class="p">,</span> <span class="s2">&quot;10.8&quot;</span><span class="p">,</span> <span class="s2">&quot;800&quot;</span><span class="p">,</span> <span class="s2">&quot;2023-28-05&quot;</span><span class="p">,</span> <span class="s2">&quot;Balboa Park, Legoland&quot;</span><span class="p">),</span>
-        <span class="k">new</span> <span class="nx">Leaderboard</span><span class="p">(</span><span class="s2">&quot;Frank&quot;</span><span class="p">,</span> <span class="s2">&quot;17.58&quot;</span><span class="p">,</span> <span class="s2">&quot;400&quot;</span><span class="p">,</span> <span class="s2">&quot;2023-28-05&quot;</span><span class="p">,</span> <span class="s2">&quot;Balboa Park, Sea World, Whaley house&quot;</span><span class="p">),</span>
-        <span class="k">new</span> <span class="nx">Leaderboard</span><span class="p">(</span><span class="s2">&quot;Tirth&quot;</span><span class="p">,</span> <span class="s2">&quot;17.58&quot;</span><span class="p">,</span> <span class="s2">&quot;1600&quot;</span><span class="p">,</span> <span class="s2">&quot;2023-24-05&quot;</span><span class="p">,</span> <span class="s2">&quot;Balboa Park, Sea World, Legoland&quot;</span><span class="p">),</span>
-        <span class="k">new</span> <span class="nx">Leaderboard</span><span class="p">(</span><span class="s2">&quot;Jishnu&quot;</span><span class="p">,</span> <span class="s2">&quot;21.58&quot;</span><span class="p">,</span> <span class="s2">&quot;1600&quot;</span><span class="p">,</span> <span class="s2">&quot;2023-24-05&quot;</span><span class="p">,</span> <span class="s2">&quot;San Diego Zoo, Sea World, Legoland&quot;</span><span class="p">),</span>
-        <span class="k">new</span> <span class="nx">Leaderboard</span><span class="p">(</span><span class="s2">&quot;Alan&quot;</span><span class="p">,</span> <span class="s2">&quot;17.58&quot;</span><span class="p">,</span> <span class="s2">&quot;1600&quot;</span><span class="p">,</span> <span class="s2">&quot;2023-25-05&quot;</span><span class="p">,</span> <span class="s2">&quot;Balboa Park, San Diego Zoo, Legoland&quot;</span><span class="p">),</span>
-        <span class="k">new</span> <span class="nx">Leaderboard</span><span class="p">(</span><span class="s2">&quot;Yuri&quot;</span><span class="p">,</span> <span class="s2">&quot;17.58&quot;</span><span class="p">,</span> <span class="s2">&quot;1600&quot;</span><span class="p">,</span> <span class="s2">&quot;2023-25-05&quot;</span><span class="p">,</span> <span class="s2">&quot;Water Park, Firehouse, San Diego Zoo&quot;</span><span class="p">),</span>
-        <span class="k">new</span> <span class="nx">Leaderboard</span><span class="p">(</span><span class="s2">&quot;Haoxuan&quot;</span><span class="p">,</span> <span class="s2">&quot;17.58&quot;</span><span class="p">,</span> <span class="s2">&quot;1600&quot;</span><span class="p">,</span> <span class="s2">&quot;2023-26-05&quot;</span><span class="p">,</span> <span class="s2">&quot;Water Park, Aquarium, Legoland&quot;</span><span class="p">),</span>
-        <span class="k">new</span> <span class="nx">Leaderboard</span><span class="p">(</span><span class="s2">&quot;Lisa&quot;</span><span class="p">,</span> <span class="s2">&quot;17.58&quot;</span><span class="p">,</span> <span class="s2">&quot;1200&quot;</span><span class="p">,</span> <span class="s2">&quot;2023-27-05&quot;</span><span class="p">,</span> <span class="s2">&quot;Picnic Park, Firehouse, Balboa Park&quot;</span><span class="p">),</span>
-        <span class="k">new</span> <span class="nx">Leaderboard</span><span class="p">(</span><span class="s2">&quot;Van&quot;</span><span class="p">,</span> <span class="s2">&quot;17.58&quot;</span><span class="p">,</span> <span class="s2">&quot;883&quot;</span><span class="p">,</span> <span class="s2">&quot;2023-18-05&quot;</span><span class="p">,</span> <span class="s2">&quot;Balboa Park, Lighthouse, Legoland&quot;</span><span class="p">),</span>
-        <span class="k">new</span> <span class="nx">Leaderboard</span><span class="p">(</span><span class="s2">&quot;Vincent&quot;</span><span class="p">,</span> <span class="s2">&quot;17.58&quot;</span><span class="p">,</span> <span class="s2">&quot;289&quot;</span><span class="p">,</span> <span class="s2">&quot;2023-10-05&quot;</span><span class="p">,</span> <span class="s2">&quot;Lighthouse, Firehouse, San Diego Zoo&quot;</span><span class="p">),</span>
-        <span class="k">new</span> <span class="nx">Leaderboard</span><span class="p">(</span><span class="s2">&quot;Zane&quot;</span><span class="p">,</span> <span class="s2">&quot;17.58&quot;</span><span class="p">,</span> <span class="s2">&quot;1528&quot;</span><span class="p">,</span> <span class="s2">&quot;2023-09-05&quot;</span><span class="p">,</span> <span class="s2">&quot;Balboa Park, Lighthouse, Legoland&quot;</span><span class="p">),</span> 
-    <span class="p">];</span>
-
-    <span class="c1">// make a collection of compounds</span>
-    <span class="k">return</span> <span class="k">new</span> <span class="nx">Leaderboardcollection</span><span class="p">(</span><span class="nx">leaderboards</span><span class="p">,</span> <span class="s2">&quot;Leaderboard&quot;</span><span class="p">);</span>
-<span class="p">}</span>
-
-<span class="kr">const</span> <span class="nx">leaderboard</span> <span class="o">=</span> <span class="nx">constructLeaderboards</span><span class="p">();</span>
-
-<span class="nx">leaderboard</span><span class="p">.</span><span class="nx">displayCollection</span><span class="p">();</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-
-
-<div id="91c6d108-39f2-49b4-8021-425e2dfd7d5a"></div>
-<div class="output_subarea output_javascript ">
-<script type="text/javascript">
-var element = $('#91c6d108-39f2-49b4-8021-425e2dfd7d5a');
-class Leaderboard {
-  constructor(name, distance, score, date, locations) {
-    this.name = name;
-    this.distance = distance;
-    this.score = score;
-    this.date = date;
-    this.locations = locations;
-  }
-
-  get() {
-    const obj = {name: this.name, distance: this.distance, score: this.score, date: this.date, locations: this.locations};
-    const json = JSON.stringify(obj);
-    return json;
-  }
-
-  logIt() {
-    //Person Object
-    console.info(this);
-    //Log to Jupter
-    element.append("Leaderboard json <br>");
-    element.append(this.get() + "<br>");  
-    //alert(this.get());
-  }
-}
-
-class Leaderboardcollection {
-  constructor(leaderboard, group) {
-    this.leaderboards = [...leaderboard]; // ... spread option
-    this.json = '{' + group + "_leaderboard:" + '[' + this.leaderboards.map(leaderboard => leaderboard.get()) + ']}';
-  }
-
-  displayCollection() {
-    element.append("<br>Leaderboard Collection object in JSON<br>");
-    element.append(this.json + "<br>");  
-    //alert(this.json);
-  }
-}
-
-function constructLeaderboards() {
-
-    // define a Array of leaderboard objects
-    const leaderboards = [ 
-        new Leaderboard("Chester", "17.58", "1600", "2023-28-05", "Balboa Park, Firehouse, Legoland"),
-        new Leaderboard("Chase", "10.8", "800", "2023-28-05", "Balboa Park, Legoland"),
-        new Leaderboard("Frank", "17.58", "400", "2023-28-05", "Balboa Park, Sea World, Whaley house"),
-        new Leaderboard("Tirth", "17.58", "1600", "2023-24-05", "Balboa Park, Sea World, Legoland"),
-        new Leaderboard("Jishnu", "21.58", "1600", "2023-24-05", "San Diego Zoo, Sea World, Legoland"),
-        new Leaderboard("Alan", "17.58", "1600", "2023-25-05", "Balboa Park, San Diego Zoo, Legoland"),
-        new Leaderboard("Yuri", "17.58", "1600", "2023-25-05", "Water Park, Firehouse, San Diego Zoo"),
-        new Leaderboard("Haoxuan", "17.58", "1600", "2023-26-05", "Water Park, Aquarium, Legoland"),
-        new Leaderboard("Lisa", "17.58", "1200", "2023-27-05", "Picnic Park, Firehouse, Balboa Park"),
-        new Leaderboard("Van", "17.58", "883", "2023-18-05", "Balboa Park, Lighthouse, Legoland"),
-        new Leaderboard("Vincent", "17.58", "289", "2023-10-05", "Lighthouse, Firehouse, San Diego Zoo"),
-        new Leaderboard("Zane", "17.58", "1528", "2023-09-05", "Balboa Park, Lighthouse, Legoland"), 
-    ];
-
-    // make a collection of compounds
-    return new Leaderboardcollection(leaderboards, "Leaderboard");
-}
-
-const leaderboard = constructLeaderboards();
-
-leaderboard.displayCollection();
-
-</script>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    {% endraw %}
-
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%html</span>
-<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/css&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css&quot;</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">language</span><span class="o">=</span><span class="s">&quot;javascript&quot;</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://code.jquery.com/jquery-3.6.0.min.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">language</span><span class="o">=</span><span class="s">&quot;javascript&quot;</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
-        <span class="c">/* CSS-style selector maps to table id or other id&#39;s in HTML */</span>
-    <span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">table</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;jsonTable&quot;</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">thead</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;jsonHead&quot;</span><span class="p">&gt;</span>
-            <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
-                <span class="p">&lt;</span><span class="nt">th</span><span class="p">&gt;</span>Username<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
-                <span class="p">&lt;</span><span class="nt">th</span><span class="p">&gt;</span>Distance<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
-                <span class="p">&lt;</span><span class="nt">th</span><span class="p">&gt;</span>Score<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
-                <span class="p">&lt;</span><span class="nt">th</span><span class="p">&gt;</span>Date<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
-                <span class="p">&lt;</span><span class="nt">th</span><span class="p">&gt;</span>Locations<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
-            <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
-        <span class="p">&lt;/</span><span class="nt">thead</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">tbody</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;jsonRow&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">tbody</span><span class="p">&gt;</span>
-    <span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
-
-    <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
-        <span class="kr">class</span> <span class="nx">Leaderboard</span> <span class="p">{</span>
-            <span class="nx">constructor</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">distance</span><span class="p">,</span> <span class="nx">score</span><span class="p">,</span> <span class="nx">date</span><span class="p">,</span> <span class="nx">locations</span><span class="p">)</span> <span class="p">{</span>
-                <span class="k">this</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="nx">name</span><span class="p">;</span>
-                <span class="k">this</span><span class="p">.</span><span class="nx">distance</span> <span class="o">=</span> <span class="nx">distance</span><span class="p">;</span>
-                <span class="k">this</span><span class="p">.</span><span class="nx">score</span> <span class="o">=</span> <span class="nx">score</span><span class="p">;</span>
-                <span class="k">this</span><span class="p">.</span><span class="nx">date</span> <span class="o">=</span> <span class="nx">date</span><span class="p">;</span>
-                <span class="k">this</span><span class="p">.</span><span class="nx">locations</span> <span class="o">=</span> <span class="nx">locations</span><span class="p">;</span>
-            <span class="p">}</span>
-
-            <span class="nx">get</span><span class="p">()</span> <span class="p">{</span>
-                <span class="kr">const</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{</span>
-                    <span class="nx">name</span><span class="o">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">,</span>
-                    <span class="nx">distance</span><span class="o">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">distance</span><span class="p">,</span>
-                    <span class="nx">score</span><span class="o">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">score</span><span class="p">,</span>
-                    <span class="nx">date</span><span class="o">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">date</span><span class="p">,</span>
-                    <span class="nx">locations</span><span class="o">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">locations</span>
-                <span class="p">};</span>
-                <span class="kr">const</span> <span class="nx">json</span> <span class="o">=</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">obj</span><span class="p">);</span>
-                <span class="k">return</span> <span class="nx">json</span><span class="p">;</span>
-            <span class="p">}</span>
-
-            <span class="nx">logIt</span><span class="p">()</span> <span class="p">{</span>
-                <span class="nx">console</span><span class="p">.</span><span class="nx">info</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
-                <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Leaderboard json&quot;</span><span class="p">);</span>
-                <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">get</span><span class="p">());</span>
-            <span class="p">}</span>
-        <span class="p">}</span>
-
-        <span class="kr">class</span> <span class="nx">LeaderboardCollection</span> <span class="p">{</span>
-            <span class="nx">constructor</span><span class="p">(</span><span class="nx">leaderboards</span><span class="p">,</span> <span class="nx">group</span><span class="p">)</span> <span class="p">{</span>
-                <span class="k">this</span><span class="p">.</span><span class="nx">leaderboards</span> <span class="o">=</span> <span class="p">[...</span><span class="nx">leaderboards</span><span class="p">];</span> <span class="c1">// ... spread option</span>
-                <span class="k">this</span><span class="p">.</span><span class="nx">json</span> <span class="o">=</span> <span class="s1">&#39;{&#39;</span> <span class="o">+</span> <span class="nx">group</span> <span class="o">+</span> <span class="s2">&quot;_leaderboard:&quot;</span> <span class="o">+</span> <span class="s1">&#39;[&#39;</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="nx">leaderboards</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">leaderboard</span> <span class="p">=&gt;</span> <span class="nx">leaderboard</span><span class="p">.</span><span class="nx">get</span><span class="p">())</span> <span class="o">+</span> <span class="s1">&#39;]}&#39;</span><span class="p">;</span>
-            <span class="p">}</span>
-
-            <span class="nx">displayCollection</span><span class="p">()</span> <span class="p">{</span>
-                <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Leaderboard Collection object in JSON&quot;</span><span class="p">);</span>
-                <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">json</span><span class="p">);</span>
-            <span class="p">}</span>
-        <span class="p">}</span>
-
-        <span class="kd">function</span> <span class="nx">constructLeaderboards</span><span class="p">()</span> <span class="p">{</span>
-            <span class="kr">const</span> <span class="nx">leaderboards</span> <span class="o">=</span> <span class="p">[</span>
-                <span class="k">new</span> <span class="nx">Leaderboard</span><span class="p">(</span><span class="s2">&quot;Chester&quot;</span><span class="p">,</span> <span class="s2">&quot;17.58&quot;</span><span class="p">,</span> <span class="s2">&quot;1600&quot;</span><span class="p">,</span> <span class="s2">&quot;2023-28-05&quot;</span><span class="p">,</span> <span class="s2">&quot;Balboa Park, Firehouse, Legoland&quot;</span><span class="p">),</span>
-                <span class="k">new</span> <span class="nx">Leaderboard</span><span class="p">(</span><span class="s2">&quot;Chase&quot;</span><span class="p">,</span> <span class="s2">&quot;10.8&quot;</span><span class="p">,</span> <span class="s2">&quot;800&quot;</span><span class="p">,</span> <span class="s2">&quot;2023-28-05&quot;</span><span class="p">,</span> <span class="s2">&quot;Balboa Park, Legoland&quot;</span><span class="p">),</span>
-                <span class="k">new</span> <span class="nx">Leaderboard</span><span class="p">(</span><span class="s2">&quot;Frank&quot;</span><span class="p">,</span> <span class="s2">&quot;17.58&quot;</span><span class="p">,</span> <span class="s2">&quot;400&quot;</span><span class="p">,</span> <span class="s2">&quot;2023-28-05&quot;</span><span class="p">,</span> <span class="s2">&quot;Balboa Park, Sea World, Whaley house&quot;</span><span class="p">),</span>
-                <span class="k">new</span> <span class="nx">Leaderboard</span><span class="p">(</span><span class="s2">&quot;Tirth&quot;</span><span class="p">,</span> <span class="s2">&quot;17.58&quot;</span><span class="p">,</span> <span class="s2">&quot;1600&quot;</span><span class="p">,</span> <span class="s2">&quot;2023-24-05&quot;</span><span class="p">,</span> <span class="s2">&quot;Balboa Park, Sea World, Legoland&quot;</span><span class="p">),</span>
-                <span class="k">new</span> <span class="nx">Leaderboard</span><span class="p">(</span><span class="s2">&quot;Jishnu&quot;</span><span class="p">,</span> <span class="s2">&quot;21.58&quot;</span><span class="p">,</span> <span class="s2">&quot;1600&quot;</span><span class="p">,</span> <span class="s2">&quot;2023-24-05&quot;</span><span class="p">,</span> <span class="s2">&quot;San Diego Zoo, Sea World, Legoland&quot;</span><span class="p">),</span>
-                <span class="k">new</span> <span class="nx">Leaderboard</span><span class="p">(</span><span class="s2">&quot;Alan&quot;</span><span class="p">,</span> <span class="s2">&quot;17.58&quot;</span><span class="p">,</span> <span class="s2">&quot;1600&quot;</span><span class="p">,</span> <span class="s2">&quot;2023-25-05&quot;</span><span class="p">,</span> <span class="s2">&quot;Balboa Park, San Diego Zoo, Legoland&quot;</span><span class="p">),</span>
-                <span class="k">new</span> <span class="nx">Leaderboard</span><span class="p">(</span><span class="s2">&quot;Yuri&quot;</span><span class="p">,</span> <span class="s2">&quot;17.58&quot;</span><span class="p">,</span> <span class="s2">&quot;1600&quot;</span><span class="p">,</span> <span class="s2">&quot;2023-25-05&quot;</span><span class="p">,</span> <span class="s2">&quot;Water Park, Firehouse, San Diego Zoo&quot;</span><span class="p">),</span>
-                <span class="k">new</span> <span class="nx">Leaderboard</span><span class="p">(</span><span class="s2">&quot;Haoxuan&quot;</span><span class="p">,</span> <span class="s2">&quot;17.58&quot;</span><span class="p">,</span> <span class="s2">&quot;1600&quot;</span><span class="p">,</span> <span class="s2">&quot;2023-26-05&quot;</span><span class="p">,</span> <span class="s2">&quot;Water Park, Aquarium, Legoland&quot;</span><span class="p">),</span>
-                <span class="k">new</span> <span class="nx">Leaderboard</span><span class="p">(</span><span class="s2">&quot;Lisa&quot;</span><span class="p">,</span> <span class="s2">&quot;17.58&quot;</span><span class="p">,</span> <span class="s2">&quot;1200&quot;</span><span class="p">,</span> <span class="s2">&quot;2023-27-05&quot;</span><span class="p">,</span> <span class="s2">&quot;Picnic Park, Firehouse, Balboa Park&quot;</span><span class="p">),</span>
-                <span class="k">new</span> <span class="nx">Leaderboard</span><span class="p">(</span><span class="s2">&quot;Van&quot;</span><span class="p">,</span> <span class="s2">&quot;17.58&quot;</span><span class="p">,</span> <span class="s2">&quot;883&quot;</span><span class="p">,</span> <span class="s2">&quot;2023-18-05&quot;</span><span class="p">,</span> <span class="s2">&quot;Balboa Park, Lighthouse, Legoland&quot;</span><span class="p">),</span>
-                <span class="k">new</span> <span class="nx">Leaderboard</span><span class="p">(</span><span class="s2">&quot;Vincent&quot;</span><span class="p">,</span> <span class="s2">&quot;17.58&quot;</span><span class="p">,</span> <span class="s2">&quot;289&quot;</span><span class="p">,</span> <span class="s2">&quot;2023-10-05&quot;</span><span class="p">,</span> <span class="s2">&quot;Lighthouse, Firehouse, San Diego Zoo&quot;</span><span class="p">),</span>
-                <span class="k">new</span> <span class="nx">Leaderboard</span><span class="p">(</span><span class="s2">&quot;Zane&quot;</span><span class="p">,</span> <span class="s2">&quot;17.58&quot;</span><span class="p">,</span> <span class="s2">&quot;1528&quot;</span><span class="p">,</span> <span class="s2">&quot;2023-09-05&quot;</span><span class="p">,</span> <span class="s2">&quot;Balboa Park, Lighthouse, Legoland&quot;</span><span class="p">)</span>
-            <span class="p">];</span>
-
-            <span class="k">return</span> <span class="k">new</span> <span class="nx">LeaderboardCollection</span><span class="p">(</span><span class="nx">leaderboards</span><span class="p">,</span> <span class="s2">&quot;Leaderboard&quot;</span><span class="p">);</span>
-        <span class="p">}</span>
-
-        <span class="kr">const</span> <span class="nx">leaderboardDatabase</span> <span class="o">=</span> <span class="nx">constructLeaderboards</span><span class="p">();</span>
-
-        <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">row</span> <span class="k">of</span> <span class="nx">leaderboardDatabase</span><span class="p">.</span><span class="nx">leaderboards</span><span class="p">)</span> <span class="p">{</span>
-            <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#jsonRow&#39;</span><span class="p">).</span><span class="nx">append</span><span class="p">(</span><span class="s1">&#39;&lt;tr&gt;&lt;td&gt;&#39;</span> <span class="o">+</span>
-                <span class="nx">row</span><span class="p">.</span><span class="nx">name</span> <span class="o">+</span> <span class="s1">&#39;&lt;/td&gt;&lt;td&gt;&#39;</span> <span class="o">+</span>
-                <span class="nx">row</span><span class="p">.</span><span class="nx">distance</span> <span class="o">+</span> <span class="s1">&#39;&lt;/td&gt;&lt;td&gt;&#39;</span> <span class="o">+</span>
-                <span class="nx">row</span><span class="p">.</span><span class="nx">score</span> <span class="o">+</span> <span class="s1">&#39;&lt;/td&gt;&lt;td&gt;&#39;</span> <span class="o">+</span>
-                <span class="nx">row</span><span class="p">.</span><span class="nx">date</span> <span class="o">+</span> <span class="s1">&#39;&lt;/td&gt;&lt;td&gt;&#39;</span> <span class="o">+</span>
-                <span class="nx">row</span><span class="p">.</span><span class="nx">locations</span> <span class="o">+</span> <span class="s1">&#39;&lt;/td&gt;&lt;/tr&gt;&#39;</span><span class="p">);</span>
-        <span class="p">}</span>
-
-        <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#jsonTable&quot;</span><span class="p">).</span><span class="nx">DataTable</span><span class="p">();</span>
-    <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-<div class="output_html rendered_html output_subarea ">
-<head>
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css">
-    <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
-    <style>
-        /* CSS-style selector maps to table id or other id's in HTML */
-    </style>
-</head>
-<body>
-    <table id="jsonTable">
-        <thead id="jsonHead">
-            <tr>
-                <th>Username</th>
-                <th>Distance</th>
-                <th>Score</th>
-                <th>Date</th>
-                <th>Locations</th>
-            </tr>
-        </thead>
-        <tbody id="jsonRow"></tbody>
-    </table>
-
-    <script>
-        class Leaderboard {
-            constructor(name, distance, score, date, locations) {
-                this.name = name;
-                this.distance = distance;
-                this.score = score;
-                this.date = date;
-                this.locations = locations;
-            }
-
-            get() {
-                const obj = {
-                    name: this.name,
-                    distance: this.distance,
-                    score: this.score,
-                    date: this.date,
-                    locations: this.locations
-                };
-                const json = JSON.stringify(obj);
-                return json;
-            }
-
-            logIt() {
-                console.info(this);
-                console.log("Leaderboard json");
-                console.log(this.get());
-            }
-        }
-
-        class LeaderboardCollection {
-            constructor(leaderboards, group) {
-                this.leaderboards = [...leaderboards]; // ... spread option
-                this.json = '{' + group + "_leaderboard:" + '[' + this.leaderboards.map(leaderboard => leaderboard.get()) + ']}';
-            }
-
-            displayCollection() {
-                console.log("Leaderboard Collection object in JSON");
-                console.log(this.json);
-            }
-        }
-
-        function constructLeaderboards() {
-            const leaderboards = [
-                new Leaderboard("Chester", "17.58", "1600", "2023-28-05", "Balboa Park, Firehouse, Legoland"),
-                new Leaderboard("Chase", "10.8", "800", "2023-28-05", "Balboa Park, Legoland"),
-                new Leaderboard("Frank", "17.58", "400", "2023-28-05", "Balboa Park, Sea World, Whaley house"),
-                new Leaderboard("Tirth", "17.58", "1600", "2023-24-05", "Balboa Park, Sea World, Legoland"),
-                new Leaderboard("Jishnu", "21.58", "1600", "2023-24-05", "San Diego Zoo, Sea World, Legoland"),
-                new Leaderboard("Alan", "17.58", "1600", "2023-25-05", "Balboa Park, San Diego Zoo, Legoland"),
-                new Leaderboard("Yuri", "17.58", "1600", "2023-25-05", "Water Park, Firehouse, San Diego Zoo"),
-                new Leaderboard("Haoxuan", "17.58", "1600", "2023-26-05", "Water Park, Aquarium, Legoland"),
-                new Leaderboard("Lisa", "17.58", "1200", "2023-27-05", "Picnic Park, Firehouse, Balboa Park"),
-                new Leaderboard("Van", "17.58", "883", "2023-18-05", "Balboa Park, Lighthouse, Legoland"),
-                new Leaderboard("Vincent", "17.58", "289", "2023-10-05", "Lighthouse, Firehouse, San Diego Zoo"),
-                new Leaderboard("Zane", "17.58", "1528", "2023-09-05", "Balboa Park, Lighthouse, Legoland")
-            ];
-
-            return new LeaderboardCollection(leaderboards, "Leaderboard");
-        }
-
-        const leaderboardDatabase = constructLeaderboards();
-
-        for (var row of leaderboardDatabase.leaderboards) {
-            $('#jsonRow').append('<tr><td>' +
-                row.name + '</td><td>' +
-                row.distance + '</td><td>' +
-                row.score + '</td><td>' +
-                row.date + '</td><td>' +
-                row.locations + '</td></tr>');
-        }
-
-        $("#jsonTable").DataTable();
-    </script>
-</body>
 
 </div>
 
